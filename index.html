@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,27 +16,27 @@
         <img src="img/WebStudio.png" alt="WebStudio" />
         <nav>
             <ul>
-                <li><a class="studio" href="#">Студія</a></li>
+                <li><a class="studio" href="index.html">Студія</a></li>
                 <li>
-                    <a class="portfolio" href="/портфоліо/портфоліо.html" >Портфоліо</a>
+                    <a class="portfolio" href="portfolio.html">Портфоліо</a>
                 </li>
                 <li><a class="contact" href="#">Контакти</a></li>
                 <li>
-                    <a class="email" href="info@devstudio.com">info@devstudio.com</a>
+                    <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a class="tel" href="#">+38 096 111 11 11</a></li>
+                    <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="efection-solutions">
             <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <form>
-                <button class="button" type="submit" formaction="#" style="width: 300x; height: 60px">
-                    Замовити послугу
-                </button>
-            </form>
+
+            <button class="button" type="button" formaction="#" style="width: 300x; height: 60px">
+                Замовити послугу
+            </button>
             <hr />
         </section>
         <section>
@@ -104,8 +107,8 @@
         <hr />
         <img src="img/WebStudio.png" alt="WebStudio" />
         <p>м. Київ, пр-т Лесі Українки, 26</p>
-        <span>info@devstudio.com</span>
-        <span>+38 096 111 11 11</span>
+        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
     </footer>
 </body>
 
