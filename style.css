@@ -58,7 +58,9 @@ footer span {
     color: var(--gray-color);
 }
 
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 
 /* 
