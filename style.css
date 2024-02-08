@@ -14,52 +14,116 @@
 .contact {
     color: var(--black-color);
 }
-.email{
+
+.email {
     color: var(--blue-color);
 }
-.tel{
+
+.tel {
     color: var(--gray-color)
 }
-.efection-solutions{
+
+.efection-solutions {
     background-color: var(--dark-background-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
 }
+
 h1 {
     color: var(--white-color);
 }
+
 .button {
     background-color: var(--blue-color);
     color: var(--white-color);
+    border-radius: 10px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
 }
+
 main h4 {
     color: var(--black-color);
+    font-weight: 700;
+    font-size: 14;
+    line-height: 114.3%;
+    text-align: start;
+    
 }
+
 main p {
     color: var(--gray-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
 }
+
 .work h1 {
     color: var(--black-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 116.7%;
+    text-align: center;
+
 }
+
 .staff h1 {
     color: var(--black-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 116.7%;
+    text-align: center;
 }
+
 .name {
     color: var(--black-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 118.8%;
 }
+
 figcaption {
     color: var(--gray-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 118.8%;
 }
+
 .technical-support {
-    background-color:var(--dark-background-color);
+    background-color: var(--dark-background-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
 }
+
 footer p {
     color: var(--white-color);
 }
+
 footer span {
     color: var(--gray-color);
 }
 
-body{
+ body {
     font-family: 'Roboto', sans-serif;
+} 
+
+.navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114.3%;
+    text-align: justify ;
+    
+}
+
+ul {
+    list-style: none;
 }
 
 
