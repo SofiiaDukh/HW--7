@@ -25,16 +25,17 @@
 
 .efection-solutions {
     background-color: var(--dark-background-color);
+    text-align: center;
+}
+
+h1 {
+    color: var(--white-color);
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
-}
-
-h1 {
-    color: var(--white-color);
 }
 
 .button {
@@ -59,10 +60,10 @@ h1 {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    
+
 }
 
-main p {
+.attention-to-detail p {
     color: var(--gray-color);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -93,7 +94,7 @@ main p {
     font-style: normal;
 }
 
-.name {
+.staff h3 {
     color: var(--black-color);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -102,12 +103,30 @@ main p {
     line-height: 1.18;
 }
 
-figcaption {
+.staff p {
+    line-height: 1.18;
+    font-size: 16px;
+    color: var(--gray-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* .name {
+    color: var(--black-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.18;
+} */
+
+/* figcaption {
     color: var(--gray-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-}
+} */
 
 .technical-support {
     background-color: var(--dark-background-color);
@@ -127,9 +146,9 @@ footer span {
     color: var(--gray-color);
 }
 
- body {
+body {
     font-family: 'Roboto', sans-serif;
-} 
+}
 
 .navigation {
     font-family: "Roboto", sans-serif;
@@ -137,8 +156,8 @@ footer span {
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;
-    text-align: justify ;
-    
+    text-align: justify;
+
 }
 
 ul {
@@ -169,4 +188,3 @@ ul {
     font-weight: 400;
     font-style: normal;
   } */
-  
