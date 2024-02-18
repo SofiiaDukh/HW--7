@@ -25,10 +25,12 @@
 
 .efection-solutions {
     background-color: var(--dark-background-color);
-    font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 h1 {
@@ -40,65 +42,79 @@ h1 {
     color: var(--white-color);
     border-radius: 10px;
     width: 200px;
-    font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 main h4 {
     color: var(--black-color);
-    font-weight: 700;
-    font-size: 14;
-    line-height: 114.3%;
+    font-size: 14px;
+    line-height: 1.14;
     text-align: start;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     
 }
 
 main p {
     color: var(--gray-color);
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
+    font-style: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     text-align: justify;
 }
 
 .work h1 {
     color: var(--black-color);
-    font-weight: 700;
     font-size: 36px;
-    line-height: 116.7%;
+    line-height: 1.16;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
 }
 
 .staff h1 {
     color: var(--black-color);
-    font-weight: 700;
     font-size: 36px;
-    line-height: 116.7%;
+    line-height: 1.16;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .name {
     color: var(--black-color);
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
+    font-style: normal;
     font-size: 16px;
-    line-height: 118.8%;
+    line-height: 1.18;
 }
 
 figcaption {
     color: var(--gray-color);
     font-weight: 400;
     font-size: 16px;
-    line-height: 118.8%;
+    line-height: 1.18;
 }
 
 .technical-support {
     background-color: var(--dark-background-color);
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
+    font-style: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     text-align: left;
 }
 
@@ -115,9 +131,11 @@ footer span {
 } 
 
 .navigation {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
+    font-style: normal;
     font-size: 14px;
-    line-height: 114.3%;
+    line-height: 1.14;
     text-align: justify ;
     
 }
@@ -127,5 +145,27 @@ ul {
 }
 
 
-/* 
-font-family: 'Roboto', sans-serif; */
+/* .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  

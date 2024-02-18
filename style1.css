@@ -1,3 +1,50 @@
+:root{
+    --blue-color: #2196F3;
+    --black-color: #212121;
+    --gray-color: #757575;
+    --dark-background-color: #2F303A;
+    --white-color: #FFFFFF;
+}
+
+.portfolio,
+.email{
+    color: var(--blue-color);
+}
+
+.studio,
+.contact{
+    color: var(--black-color);
+}
+
+.tel{
+    color: var(--gray-color);
+}
+
+.all{
+    color:var(--white-color);
+    background-color: var(--blue-color);
+}
+
+ul{
+    list-style: none;
+}
+
+.technical-support {
+    background-color: var(--dark-background-color);
+    text-align: left;
+}
+
+footer p {
+    color: var(--white-color);
+}
+
+footer span {
+    color: var(--gray-color);
+}
+
+.email-footer {
+    color: var(--gray-color);
+}
 /* 
 font-family: 'Roboto', sans-serif; */
 body{
