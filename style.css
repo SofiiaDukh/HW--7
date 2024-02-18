@@ -50,7 +50,7 @@ h1 {
     font-style: normal;
 }
 
-main h4 {
+.attention-to-detail h4 {
     color: var(--black-color);
     font-size: 14px;
     line-height: 1.14;
@@ -58,6 +58,7 @@ main h4 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-transform: uppercase;
     
 }
 
