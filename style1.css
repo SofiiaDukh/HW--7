@@ -11,6 +11,10 @@
     color: var(--blue-color);
 }
 
+.header {
+    padding: 25px 0;
+}
+
 .studio,
 .contact {
     color: var(--black-color);
@@ -66,6 +70,25 @@ footer span {
 .technocrat p {
     font-weight: 400;
     font-style: normal;
+}
+
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.address {
+    padding: 18px 0;
+}
+
+.technocrat{
+    padding: 45px;
 }
 
 /* 

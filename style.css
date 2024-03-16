@@ -6,26 +6,43 @@
     --gray-color: #757575;
 }
 
+.foto-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
 .studio {
     color: var(--blue-color);
+
 }
 
 .portfolio,
 .contact {
     color: var(--black-color);
+
 }
 
 .email {
     color: var(--blue-color);
+
 }
 
 .tel {
     color: var(--gray-color)
 }
 
+.efection-solutions h1 {
+    padding-top: 199px;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
 .efection-solutions {
     background-color: var(--dark-background-color);
+    height: 600px;
     text-align: center;
+    padding: 200px 0;
 }
 
 h1 {
@@ -49,6 +66,12 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+
+}
+
+.attention-to-detail ul {
+    padding: 94px 0;
+    list-style: none;
 }
 
 .attention-to-detail h4 {
@@ -81,7 +104,17 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin-bottom: 54px;
 
+}
+
+.work-list {
+    list-style: none;
+    padding: 36px 0;
+}
+
+.staff {
+    padding: 94px;
 }
 
 .staff h1 {
@@ -92,7 +125,22 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin-bottom: 50px;
+
 }
+
+.team-list {
+    padding: 30px 0;
+    list-style: none;
+}
+
+.list-item {
+    width: 270px;
+}
+ .photo {
+    width: 270px;
+    height: 260px;
+ }
 
 .staff h3 {
     color: var(--black-color);
@@ -101,6 +149,9 @@ h1 {
     font-style: normal;
     font-size: 16px;
     line-height: 1.18;
+}
+.team-wrap{
+    text-align: center;
 }
 
 .staff p {
@@ -136,6 +187,10 @@ h1 {
     font-size: 14px;
     line-height: 1.71;
     text-align: left;
+    padding: 60px 0;
+}
+.address{
+    padding: 18px 0;
 }
 
 footer p {
@@ -162,6 +217,16 @@ body {
 
 ul {
     list-style: none;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 25px 0;
 }
 
 
