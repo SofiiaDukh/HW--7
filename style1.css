@@ -86,6 +86,21 @@ footer span {
 .address {
     padding: 18px 0;
 }
+.blue {
+    color: var(--blue-color);
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--black-color);
+    text-decoration: none;
+    width: 145px;
+    font-size: 26px;
+    line-height: 30.52px;
+    letter-spacing: 3%;
+    padding-bottom: 89px;
+}
 
 .technocrat{
     padding: 45px;
