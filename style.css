@@ -6,6 +6,10 @@
     --gray-color: #757575;
 }
 
+.white{
+    color: var(--white-color);
+}
+
 .foto-header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -23,7 +27,7 @@
 }
 
 .email {
-    color: var(--blue-color);
+    color: var(--gray-color)
 
 }
 
@@ -121,6 +125,11 @@ h1 {
 .attention-to-detail ul {
     padding: 94px 0;
     list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    gap: 30px;
+    
 }
 
 .attention-to-detail h4 {
@@ -160,6 +169,8 @@ h1 {
 .work-list {
     list-style: none;
     padding: 36px 0;
+    display: flex;
+    gap: 30px;
 }
 
 .staff {
@@ -181,6 +192,8 @@ h1 {
 .team-list {
     padding: 30px 0;
     list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 .list-item {
@@ -239,10 +252,14 @@ h1 {
     line-height: 1.71;
     text-align: left;
     padding: 60px 0;
+    
 }
 
 .address {
     padding: 18px 0;
+    flex-direction: column;
+    
+    
 }
 
 footer p {

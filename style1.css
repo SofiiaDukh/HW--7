@@ -6,6 +6,10 @@
     --white-color: #FFFFFF;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .portfolio,
 .email {
     color: var(--blue-color);
@@ -57,9 +61,53 @@ footer span {
     font-style: normal;
 }
 
+.navigation-link1 {
+    color: var(--blue-color);
+}
+
+.navigation-link {
+    color: var(--black-color);
+}
+
+.contacts-link1 {
+    color: var(--blue-color);
+}
+
+.contacts-link {
+    color: var(--gray-color);
+}
+
+.contacts {
+    display: flex;
+    list-style: none;
+    padding-bottom: 89px;
+    gap: 50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-bottom: 89px;
+}
+
 .button {
     font-weight: 500;
     font-style: normal;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
 }
 
 .technocrat h3 {
@@ -71,6 +119,7 @@ footer span {
     font-weight: 400;
     font-style: normal;
 }
+
 
 
 .container {
@@ -85,10 +134,22 @@ footer span {
 
 .address {
     padding: 18px 0;
+    flex-direction: column;
 }
+
+.white{
+    color: var(--white-color);
+}
+
 .blue {
     color: var(--blue-color);
 }
+
+.email {
+    color: var(--gray-color)
+
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -102,8 +163,20 @@ footer span {
     padding-bottom: 89px;
 }
 
-.technocrat{
+.technocrat {
     padding: 45px;
+
+}
+
+.technocrat-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    padding: 0;
+    flex-basis: calc((100% - 60px) / 3);
+
 }
 
 /* 
