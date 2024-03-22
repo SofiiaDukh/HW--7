@@ -6,7 +6,7 @@
     --white-color: #FFFFFF;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -120,6 +120,16 @@ footer span {
     font-style: normal;
 }
 
+.figure img {
+    border-style: none;
+    width: 100%;
+}
+
+
+.figure {
+    margin: 0;
+    flex-basis: calc((100% - 60px) / 3);
+}
 
 
 .container {
@@ -137,7 +147,7 @@ footer span {
     flex-direction: column;
 }
 
-.white{
+.white {
     color: var(--white-color);
 }
 
@@ -147,7 +157,6 @@ footer span {
 
 .email {
     color: var(--gray-color)
-
 }
 
 .logo {
@@ -175,7 +184,6 @@ footer span {
     gap: 30px;
     max-width: 1200px;
     padding: 0;
-    flex-basis: calc((100% - 60px) / 3);
 
 }
 
