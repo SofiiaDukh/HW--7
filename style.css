@@ -132,6 +132,48 @@ h1 {
     
 }
 
+.attention-to-detail-foto::before{
+    content:"";
+    display: block;
+    background-image: url(./img/antenna\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+}
+
+.attention-to-detail-foto1::before{
+    content:"";
+    display: block;
+    background-image: url(./img/clock\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+}
+
+.attention-to-detail-foto2::before{
+    content:"";
+    display: block;
+    background-image: url(./img/diagram\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+}
+
+.attention-to-detail-foto3::before{
+    content:"";
+    display: block;
+    background-image: url(./img/astronaut\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+}
+
+
+
 .attention-to-detail h4 {
     color: var(--black-color);
     font-size: 14px;
