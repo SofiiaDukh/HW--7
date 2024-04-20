@@ -240,6 +240,10 @@ h1 {
 
 .list-item {
     width: 270px;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 5px 10px -5px var(--gray-color);
 }
 
 .photo {

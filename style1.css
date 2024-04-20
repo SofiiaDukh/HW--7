@@ -125,6 +125,12 @@ footer span {
     width: 100%;
 }
 
+.figure:nth-child(1){
+    width: 270px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 5px 10px -5px var(--gray-color);
+}
 
 .figure {
     margin: 0;
