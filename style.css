@@ -314,14 +314,12 @@
 }
 
 .address {
-    padding: 18px 0;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
 footer p {
     color: var(--white-color);
-    margin-bottom: 0;
 }
 
 footer span {
