@@ -181,6 +181,7 @@ button {
 .figure {
     margin: 0;
     flex-basis: calc((100% - 60px) / 3);
+    outline: 1px solid #EEEEEE;
 }
 
 
