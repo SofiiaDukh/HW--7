@@ -4,31 +4,16 @@
     --white-color: #FFFFFF;
     --black-color: #212121;
     --gray-color: #757575;
+    --gray-background-color: #F5F4FA;
+
 }
 
-.white{
+.white {
     color: var(--white-color);
-}
-
-.foto-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-
-.studio {
-    color: var(--blue-color);
-
-}
-
-.portfolio,
-.contact {
-    color: var(--black-color);
-
 }
 
 .email {
     color: var(--gray-color)
-
 }
 
 .tel {
@@ -48,12 +33,11 @@
     display: flex;
     justify-content: flex-start;
     gap: 50px;
-    padding-bottom: 89px;
 }
 
 .efection-solutions {
     background-color: var(--dark-background-color);
-
+    margin: 0;
     text-align: center;
     padding: 200px 0;
 }
@@ -66,45 +50,70 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
+    flex-wrap: wrap;
+    width: 696px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-size: 26px;
     font-weight: 700;
     color: var(--black-color);
     text-decoration: none;
     width: 145px;
     font-size: 26px;
     line-height: 30.52px;
-    letter-spacing: 3%;
-    padding-bottom: 89px;
+    padding-bottom: 25px;
+    margin: 0;
 }
 
 .blue {
     color: var(--blue-color);
 }
 
+.navigation-link1:hover {
+    color: var(--blue-color);
+}
+
 .navigation-link1 {
+    color: var(--black-color);
+    font-size: 16px;
+}
+
+.navigation-link:hover {
     color: var(--blue-color);
 }
 
 .navigation-link {
     color: var(--black-color);
+    font-size: 16px;
 }
 
 .contacts-link1 {
+    color: var(--gray-color);
+    font-size: 16px;
+}
+
+.contacts-link1:hover {
+    color: var(--blue-color);
+}
+
+.contacts-link:hover {
     color: var(--blue-color);
 }
 
 .contacts-link {
     color: var(--gray-color);
+    font-size: 16px;
 }
 
 .contacts {
     display: flex;
     list-style: none;
-    padding-bottom: 89px;
+    padding-bottom: 25px;
     gap: 50px;
 }
 
@@ -120,6 +129,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
 
+
 }
 
 .attention-to-detail ul {
@@ -129,43 +139,47 @@ h1 {
     flex-wrap: nowrap;
     align-content: center;
     gap: 30px;
-    
+
 }
 
-.attention-to-detail-foto::before{
-    content:"";
+.attention-to-detail-foto::before {
+    content: "";
     display: block;
     background-image: url("./img/antenna\ 1.png");
+    background-color: var(--gray-background-color);
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
     height: 120px;
 }
 
-.attention-to-detail-foto1::before{
-    content:"";
+.attention-to-detail-foto1::before {
+    content: "";
     display: block;
     background-image: url("./img/clock\ 1.png");
+    background-color: var(--gray-background-color);
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
     height: 120px;
 }
 
-.attention-to-detail-foto2::before{
-    content:"";
+.attention-to-detail-foto2::before {
+    content: "";
     display: block;
     background-image: url("./img/diagram\ 1.png");
+    background-color: var(--gray-background-color);
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
     height: 120px;
 }
 
-.attention-to-detail-foto3::before{
-    content:"";
+.attention-to-detail-foto3::before {
+    content: "";
     display: block;
     background-image: url("./img/astronaut\ 1.png");
+    background-color: var(--gray-background-color);
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
@@ -204,7 +218,6 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin-bottom: 54px;
 
 }
 
@@ -227,7 +240,7 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin-bottom: 50px;
+
 
 }
 
@@ -236,6 +249,7 @@ h1 {
     list-style: none;
     display: flex;
     gap: 30px;
+    background-color: var(--gray-background-color);
 }
 
 .list-item {
@@ -262,6 +276,7 @@ h1 {
 
 .team-wrap {
     text-align: center;
+    
 }
 
 .staff p {
@@ -273,21 +288,6 @@ h1 {
     font-style: normal;
 }
 
-/* .name {
-    color: var(--black-color);
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.18;
-} */
-
-/* figcaption {
-    color: var(--gray-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-} */
 
 .technical-support {
     background-color: var(--dark-background-color);
@@ -298,18 +298,26 @@ h1 {
     line-height: 1.71;
     text-align: left;
     padding: 60px 0;
-    
+
+}
+
+.information {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    max-width: 170px;
 }
 
 .address {
     padding: 18px 0;
     flex-direction: column;
-    
-    
+    flex-wrap: wrap;
 }
 
 footer p {
     color: var(--white-color);
+    margin-bottom: 0;
 }
 
 footer span {

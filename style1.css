@@ -10,11 +10,6 @@
     box-sizing: border-box;
 }
 
-.portfolio,
-.email {
-    color: var(--blue-color);
-}
-
 .header {
     padding: 25px 0;
 }
@@ -28,24 +23,23 @@
     color: var(--gray-color);
 }
 
-.all {
-    color: var(--white-color);
-    background-color: var(--blue-color);
-}
 
-ul {
-    list-style: none;
-}
 
 .technical-support {
     background-color: var(--dark-background-color);
-    text-align: left;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    padding: 60px 0;
+    
 }
-
 footer p {
     color: var(--white-color);
+    margin-bottom: 0;
+    
 }
 
 footer span {
@@ -57,11 +51,20 @@ footer span {
 }
 
 .navigation {
-    font-weight: 500;
-    font-style: normal;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
 }
 
-.navigation-link1 {
+.navigation-link1{
+    color: var(--black-color);
+}
+
+.navigation-link1:hover {
+    color: var(--blue-color);
+}
+
+.navigation-link:hover{
     color: var(--blue-color);
 }
 
@@ -69,20 +72,34 @@ footer span {
     color: var(--black-color);
 }
 
-.contacts-link1 {
+.contacts-link1:hover {
     color: var(--blue-color);
+}
+
+.contacts-link1{
+    color: var(--gray-color);
 }
 
 .contacts-link {
     color: var(--gray-color);
 }
 
+.contacts-link:hover{
+    color: var(--blue-color);
+}
+
+.contacts-item{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    size: 14px;
+}
+
 .contacts {
     display: flex;
     list-style: none;
-    padding-bottom: 89px;
     gap: 50px;
 }
+
 
 .flex-container {
     display: flex;
@@ -90,25 +107,54 @@ footer span {
     align-items: center;
 }
 
+
 .navigation-list {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     gap: 50px;
-    padding-bottom: 89px;
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
-.button {
+.navigation-item{
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-style: normal;
+    size: 14px;
 }
 
-.button-list {
+ul{
+    list-style: none;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+  }
+
+  .portfolio-menu {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
 
-}
+
+  .portfolio-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 24px;
+    margin-top: 90px;
+    margin-bottom: 0;
+  }
+
+  .portfolio-btn:hover{
+    color: var(--white-color);
+    background-color: var(--blue-color);
+  }
+
 
 .technocrat h3 {
     font-weight: 700;
@@ -125,7 +171,7 @@ footer span {
     width: 100%;
 }
 
-.figure:nth-child(1){
+.figure:hover {
     width: 270px;
     margin: 0px;
     padding: 0px;
@@ -149,8 +195,11 @@ footer span {
 }
 
 .address {
-    padding: 18px 0;
     flex-direction: column;
+    display: block;
+    margin-top: 60px;
+    gap: 9px;
+    flex-wrap: wrap;
 }
 
 .white {
@@ -161,25 +210,33 @@ footer span {
     color: var(--blue-color);
 }
 
+.information{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    max-width: 170px;
+}
+
 .email {
-    color: var(--gray-color)
+    color: var(--gray-color);
 }
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-size: 26px;
     font-weight: 700;
     color: var(--black-color);
     text-decoration: none;
     width: 145px;
     font-size: 26px;
     line-height: 30.52px;
-    letter-spacing: 3%;
-    padding-bottom: 89px;
+    margin: 0;
+
+
 }
 
 .technocrat {
-    padding: 45px 0;
+    margin-bottom: 94px;
 
 }
 
@@ -218,4 +275,10 @@ font-family: 'Roboto', sans-serif;
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+figcaption {
+    margin-left: 24px;
+    margin-bottom: 20px;
+    text-align:justify;
 }
