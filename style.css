@@ -37,6 +37,11 @@
 
 .efection-solutions {
     background-color: var(--dark-background-color);
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4) 40%, rgba(40, 50, 60, 0.5)), url("./img/Img\ \(13\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     margin: 0;
     text-align: center;
     padding: 200px 0;
@@ -126,7 +131,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-
+    border: none;
 
 }
 
