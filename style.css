@@ -8,6 +8,10 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
 .white {
     color: var(--white-color);
 }
@@ -354,6 +358,28 @@ ul {
     padding: 25px 0;
 }
 
+.icon-navigation:hover{
+    color: #2196F3;
+}
+
+ .icon-staff{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    width: 206px;
+    height: 44px;
+} 
+
+.icon-icons:hover{
+    background-color: #2196F3;
+    border-radius: 6px;
+}
+
+.icon-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* .roboto-black {
     font-family: "Roboto", sans-serif;
