@@ -8,7 +8,7 @@
 
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ a{
 .efection-solutions {
     background-color: var(--dark-background-color);
     background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4) 40%, rgba(40, 50, 60, 0.5)), url("./img/Img\ \(13\).png");
+            rgba(47, 48, 58, 0.4) 40%, rgba(40, 50, 60, 0.5)), url("./img/Img\ \(13\).png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -284,7 +284,7 @@ a{
 
 .team-wrap {
     text-align: center;
-    
+
 }
 
 .staff p {
@@ -358,28 +358,24 @@ ul {
     padding: 25px 0;
 }
 
-.icon-navigation:hover{
+.icon-navigation:hover {
     color: #2196F3;
 }
 
- .icon-staff{
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 30px;
-    width: 206px;
-    height: 44px;
-} 
-
-.icon-icons:hover{
-    background-color: #2196F3;
-    border-radius: 6px;
-}
-
-.icon-icons{
+.people-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.people-link {}
+
+.icon-staff {
+    width: 44px;
+    height: 44px;
+}
+
+
 
 /* .roboto-black {
     font-family: "Roboto", sans-serif;
