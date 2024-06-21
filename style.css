@@ -306,7 +306,7 @@ a {
     line-height: 1.71;
     text-align: left;
     padding: 60px 0;
-
+    max-height: 252px;
 }
 
 .information {
@@ -396,7 +396,7 @@ ul {
 
 .customers-icon{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .people-link-regular{
@@ -407,7 +407,7 @@ ul {
 }
 
 .people-link-regular:hover{
-    background-color: #2196F3;
+    outline: 2px solid #2196F3;
     border-radius: 5px;
 }
 
@@ -416,7 +416,29 @@ ul {
     height: 60px;
 }
 
+.footer-icons{
+    width: 206px;
+    height: 80px;
+    box-sizing: border-box;
+    margin-left: 70px;
+}
 
+.footer-icons h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer-people-icons{
+    display: flex;
+}
+
+.flex-container-footer{
+    display: flex;
+    align-items: flex-start;
+}
 
 /* .roboto-black {
     font-family: "Roboto", sans-serif;
