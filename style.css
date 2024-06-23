@@ -359,7 +359,7 @@ ul {
 }
 
 .icon-navigation:hover {
-    color: #2196F3;
+    fill: #2196F3;
 }
 
 .people-icons {
@@ -399,7 +399,7 @@ ul {
     justify-content: space-between;
 }
 
-.people-link-regular a{
+.people-link-regular:hover a{
     fill: #2196F3;
 }
 
@@ -413,8 +413,11 @@ ul {
     align-items: center;
 }
 
-.people-link-regular:hover{
+.people-link-regular:hover svg{
     fill: #2196F3;
+}
+
+.people-link-regular:hover{
     outline: 2px solid #2196F3;
     border-radius: 5px;
 }
