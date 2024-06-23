@@ -375,13 +375,13 @@ ul {
     border-radius: 25px;
 }
 
-.people-icons a {
+.people-icons:hover a {
     fill: #2196F3;
 
 }
 
 .people-link:hover{
-    border: 2px solid #2196F3;
+    outline: 2px solid #2196F3;
 }
 
 .icon-staff {
@@ -454,6 +454,10 @@ ul {
 .flex-container-footer{
     display: flex;
     align-items: flex-start;
+}
+
+.people-link:hover svg{
+    fill: #2196F3;
 }
 
 /* .roboto-black {
