@@ -368,15 +368,15 @@ ul {
 }
 
 .people-link {
-    width: 44px;
-    height: 44px;
+    padding: 12px;
+    height: 20px;
     margin-bottom: 30px;
     margin-top: 15px;
+    border-radius: 25px;
 }
 
 .people-link:hover{
     background-color: #2196F3;
-    border-radius: 25px;
 }
 
 .icon-staff {
@@ -396,7 +396,11 @@ ul {
 
 .customers-icon{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.people-link-regular a{
+    fill: #2196F3;
 }
 
 .people-link-regular{
@@ -404,6 +408,9 @@ ul {
     height: 92px;
     margin-bottom: 94px;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .people-link-regular:hover{
