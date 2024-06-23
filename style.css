@@ -381,7 +381,8 @@ ul {
 }
 
 .people-link:hover{
-    outline: 2px solid #2196F3;
+    background-color: #2196F3;
+    fill: #FFFFFF;
 }
 
 .icon-staff {
