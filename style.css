@@ -358,7 +358,7 @@ ul {
     padding: 25px 0;
 }
 
-.icon-navigation:hover {
+.contacts-item:hover svg {
     fill: #2196F3;
 }
 
