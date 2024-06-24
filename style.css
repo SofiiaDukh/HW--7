@@ -359,7 +359,7 @@ ul {
 }
 
 .contacts-item:hover svg {
-    fill: #2196F3;
+    fill: azure;
 }
 
 .icon-navigation {
@@ -379,13 +379,12 @@ ul {
     border-radius: 25px;
 }
 
-.people-icons:hover a {
-    fill: #FFFFFF;
-
-}
-
 .people-link:hover {
     background-color: #2196F3;
+}
+
+.people-link:hover svg {
+    fill: #ffffff;
 }
 
 .icon-staff {
@@ -470,9 +469,10 @@ ul {
     fill: #FFFFFF;
 }
 
-.people-link:hover svg {
-    fill: #2196F3;
+.people-link-footer:hover {
+    background-color: #2196F3;
 }
+
 
 /* .roboto-black {
     font-family: "Roboto", sans-serif;
