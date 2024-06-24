@@ -136,7 +136,7 @@ a {
     font-weight: 700;
     font-style: normal;
     border: none;
-
+    cursor: pointer;
 }
 
 .attention-to-detail ul {
@@ -362,6 +362,10 @@ ul {
     fill: #2196F3;
 }
 
+.icon-navigation {
+    margin-right: 5px;
+}
+
 .people-icons {
     display: flex;
     justify-content: center;
@@ -376,13 +380,12 @@ ul {
 }
 
 .people-icons:hover a {
-    fill: #2196F3;
+    fill: #FFFFFF;
 
 }
 
-.people-link:hover{
+.people-link:hover {
     background-color: #2196F3;
-    fill: #FFFFFF;
 }
 
 .icon-staff {
@@ -390,7 +393,7 @@ ul {
     height: 20px;
 }
 
-.icons-customer-regular h2{
+.icons-customer-regular h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -400,16 +403,16 @@ ul {
     justify-content: center;
 }
 
-.customers-icon{
+.customers-icon {
     display: flex;
     justify-content: space-between;
 }
 
-.people-link-regular:hover a{
+.people-link-regular:hover a {
     fill: #2196F3;
 }
 
-.people-link-regular{
+.people-link-regular {
     width: 170px;
     height: 92px;
     margin-bottom: 94px;
@@ -419,28 +422,28 @@ ul {
     align-items: center;
 }
 
-.people-link-regular:hover svg{
+.people-link-regular:hover svg {
     fill: #2196F3;
 }
 
-.people-link-regular:hover{
+.people-link-regular:hover {
     outline: 2px solid #2196F3;
     border-radius: 5px;
 }
 
-.icon-regular-customers{
+.icon-regular-customers {
     width: 106px;
     height: 60px;
 }
 
-.footer-icons{
+.footer-icons {
     width: 206px;
     height: 80px;
     box-sizing: border-box;
     margin-left: 70px;
 }
 
-.footer-icons h3{
+.footer-icons h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -448,16 +451,26 @@ ul {
     color: #FFFFFF;
 }
 
-.footer-people-icons{
+.footer-people-icons {
     display: flex;
 }
 
-.flex-container-footer{
+.flex-container-footer {
     display: flex;
     align-items: flex-start;
 }
 
-.people-link:hover svg{
+.people-link-footer {
+    padding: 12px;
+    height: 20px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: gray;
+    fill: #FFFFFF;
+}
+
+.people-link:hover svg {
     fill: #2196F3;
 }
 
