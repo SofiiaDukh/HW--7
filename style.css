@@ -362,7 +362,7 @@ ul {
     fill: azure;
 }
 
-.icon-navigation {
+.icon-navigation:hover {
     margin-right: 5px;
     fill: var(--blue-color);
 }
