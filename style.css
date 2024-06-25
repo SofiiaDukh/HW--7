@@ -235,6 +235,22 @@ a {
     gap: 30px;
 }
 
+
+.label{
+    position:relative;
+    bottom: 22.5%;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 48, 58, 0.8);
+    opacity: 1;
+}
+
 .staff {
     padding: 94px 0;
     background-color: var(--gray-background-color);
@@ -358,13 +374,14 @@ ul {
     padding: 25px 0;
 }
 
-.contacts-item:hover svg {
-    fill: azure;
+.contacts-link1:hover {
+    color: #2196F3;
 }
 
+
 .icon-navigation:hover {
-    margin-right: 5px;
-    fill: var(--blue-color);
+    margin-right: 10px;
+    fill: #2196F3;
 }
 
 .people-icons {
@@ -392,6 +409,7 @@ ul {
 .icon-staff {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .icons-customer-regular h2 {
@@ -477,7 +495,7 @@ ul {
     background-color: #2196F3;
 }
 
-svg{
+svg {
     fill: #afb1b8;
 }
 

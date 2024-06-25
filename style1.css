@@ -250,13 +250,14 @@ button {
 
 }
 
-.contacts-item:hover svg {
-    fill: azure;
+.contacts-link1:hover {
+    color: #2196F3;
 }
 
+
 .icon-navigation:hover {
-    margin-right: 5px;
-    fill: var(--blue-color);
+    margin-right: 10px;
+    fill: #2196F3;
 }
 
 .icon-staff {
