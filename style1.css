@@ -6,8 +6,9 @@
     --white-color: #FFFFFF;
 }
 
-* {
-    box-sizing: border-box;
+
+a {
+    text-decoration: none;
 }
 
 .header {
@@ -24,7 +25,6 @@
 }
 
 
-
 .technical-support {
     background-color: var(--dark-background-color);
     font-family: "Roboto", sans-serif;
@@ -34,8 +34,9 @@
     line-height: 1.71;
     text-align: left;
     padding: 60px 0;
-    
+    max-height: 252px;
 }
+
 footer p {
     color: var(--white-color);
     
@@ -247,6 +248,63 @@ button {
     max-width: 1200px;
     padding: 0;
 
+}
+
+.contacts-item:hover svg {
+    fill: azure;
+}
+
+.icon-navigation {
+    margin-right: 5px;
+    fill: var(--blue-color);
+}
+
+.icon-staff {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-icons {
+    width: 206px;
+    height: 80px;
+    box-sizing: border-box;
+    margin-left: 70px;
+}
+
+.footer-icons h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer-people-icons {
+    display: flex;
+}
+
+.flex-container-footer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.people-link-footer {
+    padding: 12px;
+    height: 20px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border-radius: 25px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+}
+
+.people-link-footer:hover {
+    background-color: #2196F3;
+}
+
+svg{
+    fill: #afb1b8;
 }
 
 /* 

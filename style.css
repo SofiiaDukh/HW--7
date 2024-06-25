@@ -106,7 +106,7 @@ a {
 }
 
 .contacts-link1:hover {
-    color: var(--blue-color);
+    fill: var(--blue-color);
 }
 
 .contacts-link:hover {
@@ -364,6 +364,7 @@ ul {
 
 .icon-navigation {
     margin-right: 5px;
+    fill: var(--blue-color);
 }
 
 .people-icons {
@@ -377,6 +378,7 @@ ul {
     margin-bottom: 30px;
     margin-top: 15px;
     border-radius: 25px;
+    margin-right: 10px;
 }
 
 .people-link:hover {
@@ -419,6 +421,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: 2px solid #afb1b8;
+    border-radius: 5px;
 }
 
 .people-link-regular:hover svg {
@@ -427,7 +431,6 @@ ul {
 
 .people-link-regular:hover {
     outline: 2px solid #2196F3;
-    border-radius: 5px;
 }
 
 .icon-regular-customers {
@@ -465,12 +468,17 @@ ul {
     margin-bottom: 30px;
     margin-top: 15px;
     border-radius: 25px;
-    background-color: gray;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
 }
 
 .people-link-footer:hover {
     background-color: #2196F3;
+}
+
+svg{
+    fill: #afb1b8;
 }
 
 
