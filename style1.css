@@ -255,8 +255,11 @@ button {
 }
 
 
-.icon-navigation:hover {
+.icon-navigation{
     margin-right: 10px;
+}
+
+.icon-navigation:hover svg{
     fill: #2196F3;
 }
 
