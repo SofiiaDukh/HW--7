@@ -383,7 +383,7 @@ ul {
     margin-right: 10px;
 }
 
-.icon-navigation:hover svg{
+.icon-navigation:hover{
     fill: #2196F3;
 }
 
