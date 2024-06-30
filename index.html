@@ -21,7 +21,35 @@
                 <nav class="navigation">
                     <ul class="navigation-list">
                         <li class="navigation-item">
-                            <a class="navigation-link1" href="index.html">Студія</a>
+                            <button type="button" class="btn-open" data-open-modal>Студія</button>
+                            <div class="backdrop is-hidden" data-modal>
+                                <form class="modal">
+                                    <div class="modal-title">
+                                        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+                                        <button class="btn" data-modal-close>X</button>
+                                    </div>
+                                    <label class="form-label" for="firstname">Ім'я</label>
+                                    <input class="form-input" type="text" name="name" id="name" required minlength="2"
+                                        maxlength="30">
+
+                                    <label class="form-label" for="phone">Телефон</label>
+                                    <input class="form-input" type="tel" name="phone" id="phone" required minlength="2"
+                                        maxlength="30">
+
+                                    <label class="form-label" for="email">Пошта</label>
+                                    <input class="form-input" type="email" name="email" id="email" required
+                                        pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+                                    <label class="form-label" for="comment">Коментар</label>
+                                    <textarea class="form-input" name="comment" id="comment" minlength="10"
+                                        maxlength="256">Введіть текст
+                                    </textarea>
+
+                                    <input class="form-input" type="checkbox" name="Погоджуюся з розсилкою та приймаю" id="checkbox">
+
+                                    <button class="form-btn button" type="submit">Відправити</button>
+                                </form>
+                            </div>
                         </li>
                         <li class="navigation-item">
                             <a class="navigation-link" href="portfolio.html">Портфоліо</a>
@@ -34,21 +62,21 @@
                 <ul class="contacts">
                     <li class="contacts-item">
                         <a class="contacts-link1" href="mailto:info@devstudio.com">
-                            <svg class="icon-navigation"
-                                width="20px" height="16px">
+                            <svg class="icon-navigation" width="20px" height="16px">
                                 <use href="./img/symbol-defs.svg#icon-envelope"></use>
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="contacts-item">
                         <a class="contacts-link" href="tel:+380961111111">
-                            <svg class="icon-navigation" width="20px"
-                                height="16px">
+                            <svg class="icon-navigation" width="20px" height="16px">
                                 <use href="./img/symbol-defs.svg#icon-smartphone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
         </div>
+
+
     </header>
     <main>
         <section class="efection-solutions">
@@ -313,6 +341,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
