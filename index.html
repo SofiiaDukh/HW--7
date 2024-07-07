@@ -21,35 +21,9 @@
                 <nav class="navigation">
                     <ul class="navigation-list">
                         <li class="navigation-item">
-                            <button type="button" class="btn-open" data-open-modal>Студія</button>
-                            <div class="backdrop is-hidden" data-modal>
-                                <form class="modal">
-                                    <div class="modal-title">
-                                        <h2>Залиште свої дані, ми вам передзвонимо</h2>
-                                        <button class="btn" data-modal-close>X</button>
-                                    </div>
-                                    <label class="form-label" for="firstname">Ім'я</label>
-                                    <input class="form-input" type="text" name="name" id="name" required minlength="2"
-                                        maxlength="30">
-
-                                    <label class="form-label" for="phone">Телефон</label>
-                                    <input class="form-input" type="tel" name="phone" id="phone" required minlength="2"
-                                        maxlength="30">
-
-                                    <label class="form-label" for="email">Пошта</label>
-                                    <input class="form-input" type="email" name="email" id="email" required
-                                        pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-
-                                    <label class="form-label" for="comment">Коментар</label>
-                                    <textarea class="form-input" name="comment" id="comment" minlength="10"
-                                        maxlength="256">Введіть текст
-                                    </textarea>
-
-                                    <input class="form-input" type="checkbox" name="Погоджуюся з розсилкою та приймаю" id="checkbox">
-
-                                    <button class="form-btn button" type="submit">Відправити</button>
-                                </form>
-                            </div>
+                        <li class="navigation-item">
+                            <a class="navigation-link1" href="index.html">Студія</a>
+                        </li>
                         </li>
                         <li class="navigation-item">
                             <a class="navigation-link" href="portfolio.html">Портфоліо</a>
@@ -83,9 +57,59 @@
             <div class="container">
                 <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
 
-                <button class="button" type="button" formaction="#" style="width: 300x; height: 60px">
+                <button class="btn-open" data-modal-open type="button" formaction="#" style="width: 300x; height: 60px">
                     Замовити послугу
                 </button>
+                <div class="backdrop is-hidden" data-modal>
+                    <form class="modal">
+                        <div class="modal-title">
+                            <h2>Залиште свої дані, ми вам передзвонимо</h2>
+                            <button class="btn" data-modal-close>X</button>
+                        </div>
+                        <h4>Ім'я</h4>
+                        <div class="person-modal-name">
+                            <img src="./img/person-modal.png">
+                            <div class="name-modal">
+                                <label class="form-label" for="firstname"></label>
+                                <input class="form-input" type="text" name="name" id="name" required minlength="2"
+                                    maxlength="30">
+                            </div>
+                        </div>
+                        <h4>Телефон</h4>
+                        <div class="phone-modal-tel">
+                            <img src="./img/phone-modal.png">
+                            <div class="tel-modal">
+                                <label class="form-label" for="phone"></label>
+                                <input class="form-input" type="tel" name="phone" id="phone" required minlength="2"
+                                    maxlength="30">
+                            </div>
+                        </div>
+                        <h4>Пошта</h4>
+                        <div class="email-modal-label">
+                            <img src="./img/email-modal.png">
+                            <div class="email-modal">
+                                <label class="form-label" for="email"></label>
+                                <input class="form-input" type="email" name="email" id="email" required
+                                    pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            </div>
+                        </div>
+                        <h4>Коментар</h4>
+                        <div class="comment-modal">
+                            <label class="form-label" for="comment"></label>
+                            <textarea class="form-input" name="comment" id="comment" minlength="10" maxlength="256">Введіть текст
+                        </textarea>
+                        </div>
+
+                        <div class="checkbox-modal">
+                            <input class="form-input" type="checkbox" name="checkbox" id="checkbox">
+                            <div class="text-modal">
+                                <p>Погоджуюся з розсилкою та приймаю</p>
+                                <a class="rule" href="#">Умови договору</a>
+                            </div>
+                        </div>
+                        <button class="form-btn button" type="submit">Відправити</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="attention-to-detail">
@@ -314,7 +338,7 @@
                     </address>
                 </div>
                 <div class="footer-icons">
-                    <h3>Приєднуйтесь</h3>
+                    <h3>ПРИЄДНУЙТЕСЬ</h3>
                     <div class="footer-people-icons">
                         <a href="#" class="people-link-footer">
                             <svg class="icon-staff">
@@ -336,6 +360,16 @@
                                 <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
+                    </div>
+                </div>
+                <div class="footer-e-mail">
+                    <h3>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+                    <div class="footer-form">
+                        <label class="footer-label" for="E-mail">
+                        <textarea class="footer-textarea" name="E-mail" id="mail" minlength="1" maxlength="20">E-mail</textarea>
+                    </label>
+                    
+                    <button class="footer-button">Підписатися<img src="./img/icon-send.svg"></button>
                     </div>
                 </div>
             </div>
