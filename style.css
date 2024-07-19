@@ -105,12 +105,8 @@ a {
     font-size: 16px;
 }
 
-.contacts-link1:hover {
-    color: var(--blue-color);
-}
-
 .contacts-link1:hover svg{
-    color: #2196F3;
+    fill: #2196F3;
 }
 
 .contacts-link:hover {
@@ -118,7 +114,7 @@ a {
 }
 
 .contacts-link:hover svg{
-    color: #2196F3;
+    fill: #2196F3;
 }
 
 .contacts-link {
