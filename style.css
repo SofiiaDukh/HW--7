@@ -651,8 +651,8 @@ input#checkbox {
 .person-modal-name:hover{
     border-color: #2196F3;
 }
-.person-modal-name:hover a{
-    color: #2196F3;
+.person-modal-name:hover svg{
+    fill: #2196F3;
 }
 
 .modal-defs{
@@ -687,8 +687,8 @@ input#checkbox {
     border-color: #2196F3;
 }
 
-.phone-modal-tel:hover a{
-    color: #2196F3;
+.phone-modal-tel:hover svg{
+    fill: #2196F3;
 }
 
 .email-modal-label{
@@ -705,8 +705,8 @@ input#checkbox {
     border-color: #2196F3;
 }
 
-.email-modal-label:hover a{
-    color: #2196F3;
+.email-modal-label:hover svg{
+    fill: #2196F3;
 }
 
 .comment-modal{
