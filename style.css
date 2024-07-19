@@ -101,20 +101,28 @@ a {
 }
 
 .contacts-link1 {
-    color: var(--gray-color);
+    color: #757575;
     font-size: 16px;
 }
 
 .contacts-link1:hover {
-    fill: var(--blue-color);
+    color: var(--blue-color);
+}
+
+.contacts-link1:hover svg{
+    color: #2196F3;
 }
 
 .contacts-link:hover {
     color: var(--blue-color);
 }
 
+.contacts-link:hover svg{
+    color: #2196F3;
+}
+
 .contacts-link {
-    color: var(--gray-color);
+    color: #757575;
     font-size: 16px;
 }
 
@@ -370,9 +378,6 @@ ul {
     margin-right: 10px;
 }
 
-.icon-navigation:hover{
-    fill: #2196F3;
-}
 
 .people-icons {
     display: flex;
@@ -496,7 +501,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #212121;
+    background-color: #2121218f;
     opacity: 1;
 }
 
@@ -574,6 +579,11 @@ svg {
     cursor: pointer;
 }
 
+.btn:hover{
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
 .modal h4{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -645,6 +655,15 @@ input#checkbox {
 .person-modal-name:hover{
     border-color: #2196F3;
 }
+.person-modal-name:hover a{
+    color: #2196F3;
+}
+
+.modal-defs{
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+}
 
 .person-modal-name {
     margin-left: 5px;
@@ -656,10 +675,6 @@ input#checkbox {
     height: 40px;
 }
 
-.person-modal-name img {
-    width: 18px;
-    margin-left: 10px;
-}
 
 .phone-modal-tel{
     margin-left: 5px;
@@ -671,13 +686,13 @@ input#checkbox {
     height: 40px;
 }
 
-.phone-modal-tel img{
-    width: 18px;
-    margin-left: 10px;
-}
 
 .phone-modal-tel:hover{
     border-color: #2196F3;
+}
+
+.phone-modal-tel:hover a{
+    color: #2196F3;
 }
 
 .email-modal-label{
@@ -690,13 +705,12 @@ input#checkbox {
     height: 40px;
 }
 
-.email-modal-label img{
-    width: 18px;
-    margin-left: 10px;
-}
-
 .email-modal-label:hover{
     border-color: #2196F3;
+}
+
+.email-modal-label:hover a{
+    color: #2196F3;
 }
 
 .comment-modal{
@@ -705,6 +719,10 @@ input#checkbox {
     width: 440px;
     height: 138px;
     margin-left: 5px;
+}
+
+.comment-modal:hover{
+    border: 1px solid var(--blue-color);
 }
 .comment-modal textarea{
     font-family: "Roboto", sans-serif;
