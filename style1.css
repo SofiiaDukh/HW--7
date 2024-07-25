@@ -176,7 +176,7 @@ button {
 
 .figure-overlay .card-overlay{
     transform: translateY(100%);
-    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thumb {
