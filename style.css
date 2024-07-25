@@ -130,7 +130,9 @@ a {
     gap: 50px;
 }
 
-
+.header svg{
+    fill: #757575;
+}
 
 .attention-to-detail ul {
     padding: 94px 0;
