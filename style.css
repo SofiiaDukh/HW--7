@@ -42,18 +42,17 @@ a {
 .navigation-list a:hover::after{
     content: "";
     width:100%;
-    max-width: 75px;
     height: 4px;
     position: absolute;
     background-color: var(--blue-color);
     display: block;
+    bottom: -42px;
 }
 
 
 .efection-solutions {
     background-color: var(--dark-background-color);
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4) 40%, rgba(40, 50, 60, 0.5)), url("./img/Img\ \(13\).png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(40, 50, 60, 0.5)), url("./img/Img\ \(13\).png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,6 +99,7 @@ a {
 .navigation-link {
     color: var(--black-color);
     font-size: 16px;
+    position: relative;
 }
 
 .contacts-link1 {
@@ -504,32 +504,49 @@ svg {
     background-color: #2121218f;
     opacity: 1;
 }
-
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
-
-
 .no-scroll {
     overflow: hidden;
 }
-
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     max-width: 530px;
     max-height: 580px;
-    padding: 15px;
+    padding: 20px;
     background-color: white;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    box-sizing: border-box;
+}
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-title h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #212121;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 
-.person-modal-name {
-    display: flex;
+.btn{
+    border-radius: 50px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+.btn:hover {
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
 }
 
 .btn-open {
@@ -547,41 +564,10 @@ svg {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-
-
 }
 
 .btn-open:disabled {
     pointer-events: none;
-}
-
-.modal-title {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.modal-title h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
-    color: #212121;
-    margin-right: 10px;
-}
-
-.btn {
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgb(157, 158, 157);
-    border-radius: 50px;
-    background-color: #FFFFFF;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    color: var(--blue-color);
-    border: 1px solid var(--blue-color);
 }
 
 .modal h4 {
@@ -590,12 +576,16 @@ svg {
     font-style: normal;
     font-size: 12px;
     color: #757575;
-    display: flex;
-    margin-left: 20px;
-    margin-top: 15px;
     margin-bottom: 5px;
+    margin-right: 350px;
+    margin-top: 15px;
 }
 
+.modal-defs {
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+}
 .text-modal {
     display: flex;
     align-items: center;
@@ -606,11 +596,27 @@ svg {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #757575;
+}
+.text-modal p {
+    margin-right: 5px;
+}
+.text-modal a {
+    color: #2196F3;
+    text-decoration-line: underline;
+}
+
+input#checkbox {
+    width: 15px;
+    height: 16px;
+    margin-left: 25px;
+    margin-right: 10px;
 }
 
 .checkbox-modal {
     display: flex;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 10px;
     width: 425px;
 }
 
@@ -624,17 +630,10 @@ svg {
     text-decoration-line: underline;
 }
 
-input#checkbox {
-    width: 15px;
-    height: 16px;
-    margin-left: 25px;
-    margin-right: 10px;
-}
-
 .form-btn {
     width: 200px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #2196F3;
     color: #FFFFFF;
     border-radius: 10px;
@@ -646,98 +645,61 @@ input#checkbox {
 }
 
 .form-input {
+    width: 360px;
+    padding: 10px;
     border: none;
 }
 
 .form-input:focus {
     outline: none;
-}
-
-.person-modal-name:hover {
     border-color: #2196F3;
 }
 
-.person-modal-name:hover svg {
-    fill: #2196F3;
-}
-
-.modal-defs {
-    width: 18px;
-    height: 18px;
-    margin-left: 12px;
-}
-
-.person-modal-name {
-    margin-left: 5px;
+.person-modal-name, .phone-modal-tel, .email-modal-label, .comment-modal {
     display: flex;
     align-items: center;
     border: 1px solid #2a2a2a;
     border-radius: 5px;
-    width: 440px;
-    height: 40px;
-}
-
-
-.phone-modal-tel {
+    width: 100%;
+    height: 50px;
     margin-left: 5px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #2a2a2a;
-    border-radius: 5px;
-    width: 440px;
-    height: 40px;
+    box-sizing: border-box;
 }
 
+.person-modal-name svg, .phone-modal-tel svg, .email-modal-label svg {
+    margin-right: 10px;
+    fill: #757575;
+}
 
-.phone-modal-tel:hover {
+.person-modal-name:hover, .phone-modal-tel:hover, .email-modal-label:hover, .comment-modal:hover {
     border-color: #2196F3;
 }
 
-.phone-modal-tel:hover svg {
+.person-modal-name:hover svg, .phone-modal-tel:hover svg, .email-modal-label:hover svg {
     fill: #2196F3;
 }
 
-.email-modal-label {
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #2a2a2a;
-    border-radius: 5px;
-    width: 440px;
-    height: 40px;
-}
-
-.email-modal-label:hover {
-    border-color: #2196F3;
-}
-
-.email-modal-label:hover svg {
-    fill: #2196F3;
-}
-
-.comment-modal {
-    border: 1px solid #2a2a2a;
-    border-radius: 5px;
-    width: 440px;
-    height: 138px;
-    margin-left: 5px;
-}
-
-.comment-modal:hover {
-    border: 1px solid var(--blue-color);
+.comment-modal{
+    height: 130px;
 }
 
 .comment-modal textarea {
+    border: none;
+    resize: none;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
+    border-radius: 5px;
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
     color: #757575;
-    padding-top: 15px;
-    padding-left: 15px;
     height: 120px;
-    width: 420px;
+    box-sizing: border-box; 
 }
+
+.comment-modal textarea:focus {
+    outline: none;
+}
+
 
 .footer-e-mail {
     margin-left: 95px;

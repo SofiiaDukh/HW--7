@@ -58,54 +58,58 @@
                 <button class="btn-open" data-modal-open type="button" formaction="#" style="width: 300x; height: 60px">
                     Замовити послугу
                 </button>
+                
                 <div class="backdrop is-hidden" data-modal>
                     <form class="modal">
                         <div class="modal-title">
                             <h2>Залиште свої дані, ми вам передзвонимо</h2>
                             <button class="btn" data-modal-close>X</button>
                         </div>
-                        <h4>Ім'я</h4>
-                        <div class="person-modal-name">
-                            <a href="#" class="icon-person-modal">
+                        <div class="form-group">
+                            <h4>Ім'я</h4>
+                            <div class="person-modal-name">
+                                <a href="#" class="icon-person-modal">
+                                    <svg class="modal-defs">
+                                        <use href="./img/symbol-defs-twice.svg#icon-person-modal"></use>
+                                    </svg>
+                                </a>
+                                <div class="name-modal">
+                                    <label class="form-label" for="name"></label>
+                                    <input class="form-input" type="text" name="name" id="name" required minlength="2" maxlength="30">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h4>Телефон</h4>
+                            <div class="phone-modal-tel">
                                 <svg class="modal-defs">
-                                    <use href="./img/symbol-defs-twice.svg#icon-person-modal"></use>
+                                    <use href="./img/symbol-defs-twice.svg#icon-phone-modal"></use>
                                 </svg>
-                            </a>
-                            <div class="name-modal">
-                                <label class="form-label" for="firstname"></label>
-                                <input class="form-input" type="text" name="name" id="name" required minlength="2"
-                                    maxlength="30">
+                                <div class="tel-modal">
+                                    <label class="form-label" for="phone"></label>
+                                    <input class="form-input" type="tel" name="phone" id="phone" required minlength="2" maxlength="30">
+                                </div>
                             </div>
                         </div>
-                        <h4>Телефон</h4>
-                        <div class="phone-modal-tel">
-                            <svg class="modal-defs">
-                                <use href="./img/symbol-defs-twice.svg#icon-phone-modal"></use>
-                            </svg>
-                            <div class="tel-modal">
-                                <label class="form-label" for="phone"></label>
-                                <input class="form-input" type="tel" name="phone" id="phone" required minlength="2"
-                                    maxlength="30">
+                        <div class="form-group">
+                            <h4>Пошта</h4>
+                            <div class="email-modal-label">
+                                <svg class="modal-defs">
+                                    <use href="./img/symbol-defs-twice.svg#icon-email-modal"></use>
+                                </svg>
+                                <div class="email-modal">
+                                    <label class="form-label" for="email"></label>
+                                    <input class="form-input" type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                </div>
                             </div>
                         </div>
-                        <h4>Пошта</h4>
-                        <div class="email-modal-label">
-                            <svg class="modal-defs">
-                                <use href="./img/symbol-defs-twice.svg#icon-email-modal"></use>
-                            </svg>
-                            <div class="email-modal">
-                                <label class="form-label" for="email"></label>
-                                <input class="form-input" type="email" name="email" id="email" required
-                                    pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <div class="form-group">
+                            <h4>Коментар</h4>
+                            <div class="comment-modal">
+                                <label class="form-label" for="comment"></label>
+                                <textarea class="form-input" name="comment" id="comment" minlength="10" maxlength="256">Введіть текст</textarea>
                             </div>
                         </div>
-                        <h4>Коментар</h4>
-                        <div class="comment-modal">
-                            <label class="form-label" for="comment"></label>
-                            <textarea class="form-input" name="comment" id="comment" minlength="10" maxlength="256">Введіть текст
-                        </textarea>
-                        </div>
-
                         <div class="checkbox-modal">
                             <input class="form-input" type="checkbox" name="checkbox" id="checkbox">
                             <div class="text-modal">
@@ -116,6 +120,8 @@
                         <button class="form-btn button" type="submit">Відправити</button>
                     </form>
                 </div>
+                
+                
             </div>
         </section>
         <section class="attention-to-detail">

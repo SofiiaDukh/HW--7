@@ -181,11 +181,11 @@ button {
 
 .thumb {
     width: 100%;
-    height: 100%;
+    
 }
 
-.figure-overlay:hover .card-overlay {
-    transform: translateY(-29%);
+.figure:hover .card-overlay {
+    transform: translateY(0%);
 }
 
 
