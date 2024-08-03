@@ -46,6 +46,7 @@ a {
     position: absolute;
     background-color: var(--blue-color);
     display: block;
+    border-radius: 5px;
     bottom: -42px;
 }
 
@@ -679,6 +680,14 @@ input#checkbox {
     fill: #2196F3;
 }
 
+.person-modal-name:focus-within, .phone-modal-tel:focus-within, .email-modal-label:focus-within, .form-input{
+    border-color: #2196F3;
+}
+
+.person-modal-name:focus-within, .phone-modal-tel:focus-within, .email-modal-label:focus-within, svg{
+    fill: #2196F3;
+}
+
 .comment-modal{
     height: 130px;
 }
@@ -698,6 +707,10 @@ input#checkbox {
 
 .comment-modal textarea:focus {
     outline: none;
+}
+
+.comment-modal:focus-within, textarea{
+    border-color: #2196F3;
 }
 
 

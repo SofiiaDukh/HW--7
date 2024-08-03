@@ -57,6 +57,7 @@ footer span {
 .navigation-link {
     color: var(--black-color);
     font-size: 16px;
+    position: relative;
 }
 
 .contacts-link1 {
@@ -115,12 +116,13 @@ footer span {
 
 .navigation-list a:hover::after {
     content: "";
+    border-radius: 5px;
     width: 100%;
-    max-width: 75px;
     height: 4px;
     position: absolute;
     background-color: var(--blue-color);
     display: block;
+    bottom: -42px;
 }
 
 ul {
