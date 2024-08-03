@@ -684,8 +684,9 @@ input#checkbox {
     border-color: #2196F3;
 }
 
-.icon-person-modal:focus-within, .phone-person-modal:focus-within, .email-person-modal:focus-within, svg{
-    fill: #2196F3;
+
+.person-modal-name:focus-within svg, .phone-modal-tel:focus-within svg, .email-modal-label:focus-within svg {
+    fill: #2196F3
 }
 
 .comment-modal{
