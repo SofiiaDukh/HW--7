@@ -106,6 +106,7 @@ footer span {
     display: flex;
     justify-content: flex-start;
     gap: 50px;
+    position: relative;
 }
 
 .navigation-item {
@@ -114,7 +115,34 @@ footer span {
     size: 14px;
 }
 
-.navigation-list a:hover::after {
+.navigation-list a::before {
+    position: absolute;
+    width: 100%;
+  height: 4px;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s transform ease;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0 50%;
+}
+
+.navigation-list a::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: var(--blue-color);
+    display: block;
+    border-radius: 5px;
+    bottom: -42px;
+    transform-origin: 50% 50%;
+}
+
+.navigation-list a:hover::before {
+    transform: scale3d(1, 1, 1);
+}
+
+.navigation-list a::before {
     content: "";
     border-radius: 5px;
     width: 100%;
@@ -123,6 +151,24 @@ footer span {
     background-color: var(--blue-color);
     display: block;
     bottom: -42px;
+}
+
+.navigation-item{
+    font-size: 16px;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.navigation-item:hover, .navigation-item:focus{
+    font-size: 30px;
+}
+
+.contacts-item{
+    font-size: 16px;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-item:hover, .contacts-item:focus{
+    font-size: 30px;
 }
 
 ul {
@@ -151,6 +197,7 @@ button {
     margin-top: 90px;
     margin-bottom: 0;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover {
@@ -178,7 +225,8 @@ button {
 
 .figure-overlay .card-overlay{
     transform: translateY(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 15px;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thumb {
@@ -188,6 +236,7 @@ button {
 
 .figure:hover .card-overlay {
     transform: translateY(0%);
+    font-size: 20px;
 }
 
 
@@ -341,10 +390,11 @@ button {
         margin-right: 10px;
         background-color: rgba(255, 255, 255, 0.1);
         fill: #FFFFFF;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .people-link-footer:hover {
-        background-color: #2196F3;
+    .people-link-footer svg{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     svg {
