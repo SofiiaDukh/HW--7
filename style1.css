@@ -222,6 +222,7 @@ button {
     line-height: 28px;
     letter-spacing: 0.03em;
     height: 290px;
+    transition: transform 250ms ;
 }
 
 .figure-overlay .card-overlay {
