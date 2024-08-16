@@ -836,6 +836,7 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-left: 12px;
+    cursor: pointer;
 }
 
 .footer-button img {
