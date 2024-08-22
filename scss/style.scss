@@ -1,0 +1,34 @@
+:root {
+    --blue-color: #2196F3;
+    --dark-background-color: #2F303A;
+    --white-color: #FFFFFF;
+    --black-color: #212121;
+    --gray-color: #757575;
+    --gray-background-color: #F5F4FA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+svg {
+    fill: #afb1b8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@import 'index/header';
+@import 'index/post';
+@import 'index/footer';
