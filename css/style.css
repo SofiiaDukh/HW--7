@@ -140,7 +140,7 @@ a {
 }
 
 .contacts-link:hover {
-  color: #2196F3;
+  color: var(--blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -203,7 +203,7 @@ a {
 .attention-to-detail-foto::before {
   content: "";
   display: block;
-  background-image: url("./img/antenna 1.png");
+  background-image: url("../img/antenna 1.png");
   background-color: var(--gray-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -214,7 +214,7 @@ a {
 .attention-to-detail-foto1::before {
   content: "";
   display: block;
-  background-image: url("./img/clock 1.png");
+  background-image: url("../img/clock 1.png");
   background-color: var(--gray-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -225,7 +225,7 @@ a {
 .attention-to-detail-foto2::before {
   content: "";
   display: block;
-  background-image: url("./img/diagram 1.png");
+  background-image: url("../img/diagram 1.png");
   background-color: var(--gray-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -236,7 +236,7 @@ a {
 .attention-to-detail-foto3::before {
   content: "";
   display: block;
-  background-image: url("./img/astronaut 1.png");
+  background-image: url("../img/astronaut_1.png");
   background-color: var(--gray-background-color);
   background-repeat: no-repeat;
   background-position: center;

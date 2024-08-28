@@ -1,0 +1,112 @@
+.portfolio-menu {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+
+.portfolio-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 24px;
+    margin-top: 90px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-btn:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    -webkit-box-shadow: 0px 20px 40px -10px rgba(97, 97, 97, 1);
+    -moz-box-shadow: 0px 20px 40px -10px rgba(97, 97, 97, 1);
+    box-shadow: 0px 20px 40px -10px rgba(97, 97, 97, 1);
+}
+
+.card-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 30px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    height: 290px;
+    transition: transform 250ms ;
+}
+
+.figure-overlay .card-overlay {
+    transform: translateY(100%);
+   
+}
+
+.thumb {
+    width: 100%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.figure:hover .card-overlay {
+    transform: translateY(0%);
+    font-size: 18px;
+}
+
+.figure img {
+    border-style: none;
+    width: 100%;
+}
+
+.figure:hover {
+    width: 270px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 5px 10px -5px var(--gray-color);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.figure-overlay {
+    overflow: hidden;
+    position: relative;
+}
+
+.figure {
+    margin: 0;
+    flex-basis: calc((100% - 60px) / 3);
+    outline: 1px solid #EEEEEE;
+    cursor: pointer;
+}
+
+.technocrat h3 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.technocrat p {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.technocrat {
+    margin-bottom: 94px;
+
+}
+
+.technocrat-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    padding: 0;
+
+}

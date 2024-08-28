@@ -6,12 +6,16 @@
   --white-color: #FFFFFF;
 }
 
-a {
-  text-decoration: none;
+.blue {
+  color: var(--blue-color);
 }
 
-.header {
-  padding: 25px 0;
+.white {
+  color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 .studio,
@@ -19,78 +23,48 @@ a {
   color: var(--black-color);
 }
 
-.tel {
-  color: var(--gray-color);
-}
-
-.technical-support {
-  background-color: var(--dark-background-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: left;
-  padding: 60px 0;
-  max-height: 252px;
-}
-
-footer p {
-  color: var(--white-color);
-}
-
-footer span {
-  color: var(--gray-color);
-}
-
-.email-footer {
-  color: var(--gray-color);
-}
-
-.navigation-link:hover {
-  color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-link {
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   color: var(--black-color);
-  font-size: 16px;
-  position: relative;
+  text-decoration: none;
+  width: 145px;
+  font-size: 26px;
+  line-height: 30.52px;
+  margin: 0;
 }
 
-.contacts-link1 {
-  color: #757575;
-  font-size: 16px;
-}
-
-.contacts-link1:hover svg {
-  fill: #2196F3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-link:hover {
-  color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-link:hover svg {
-  fill: #2196F3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-link {
-  color: #757575;
-  font-size: 16px;
-}
-
-.contacts {
-  display: flex;
+ul {
   list-style: none;
-  gap: 50px;
 }
 
-.header svg {
-  fill: #757575;
+button {
+  border: none;
+  border-radius: 4px;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+svg {
+  fill: #afb1b8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+figcaption {
+  margin-left: 24px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.header {
+  padding: 25px 0;
 }
 
 .flex-container {
@@ -111,6 +85,8 @@ footer span {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   size: 14px;
+  font-size: 16px;
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list a::before {
@@ -140,20 +116,21 @@ footer span {
   transform: scale3d(1, 1, 1);
 }
 
-.navigation-list a::before {
-  content: "";
-  border-radius: 5px;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  background-color: var(--blue-color);
-  display: block;
-  bottom: -42px;
+.navigation-link {
+  color: var(--black-color);
+  font-size: 16px;
+  position: relative;
 }
 
-.navigation-item {
-  font-size: 16px;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.navigation-link:hover {
+  color: var(--blue-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts {
+  display: flex;
+  list-style: none;
+  gap: 50px;
 }
 
 .contacts-item {
@@ -161,13 +138,70 @@ footer span {
   transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-ul {
-  list-style: none;
+.contacts-link1 {
+  color: #757575;
+  font-size: 16px;
 }
 
-button {
-  border: none;
-  border-radius: 4px;
+.contacts-link1:hover svg {
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link:hover {
+  color: var(--blue-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link:hover svg {
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link {
+  color: #757575;
+  font-size: 16px;
+}
+
+.header svg {
+  fill: #757575;
+}
+
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 24px;
+  margin-top: 90px;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-btn:hover {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  box-shadow: 0px 20px 40px -10px rgb(97, 97, 97);
+}
+
+.contacts-link1:hover {
+  color: #2196F3;
+}
+
+.icon-navigation {
+  margin-right: 10px;
+}
+
+.icon-navigation:hover {
+  fill: #2196F3;
 }
 
 .portfolio-menu {
@@ -228,16 +262,6 @@ button {
   font-size: 18px;
 }
 
-.technocrat h3 {
-  font-weight: 700;
-  font-style: normal;
-}
-
-.technocrat p {
-  font-weight: 400;
-  font-style: normal;
-}
-
 .figure img {
   border-style: none;
   width: 100%;
@@ -264,52 +288,14 @@ button {
   cursor: pointer;
 }
 
-.container {
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.header {
-  padding: 25px 0;
-}
-
-.address {
-  flex-direction: column;
-  display: block;
-  gap: 9px;
-  flex-wrap: wrap;
-}
-
-.white {
-  color: var(--white-color);
-}
-
-.blue {
-  color: var(--blue-color);
-}
-
-.information {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
-  max-width: 170px;
-}
-
-.email {
-  color: var(--gray-color);
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
+.technocrat h3 {
   font-weight: 700;
-  color: var(--black-color);
-  text-decoration: none;
-  width: 145px;
-  font-size: 26px;
-  line-height: 30.52px;
-  margin: 0;
+  font-style: normal;
+}
+
+.technocrat p {
+  font-weight: 400;
+  font-style: normal;
 }
 
 .technocrat {
@@ -325,16 +311,51 @@ button {
   padding: 0;
 }
 
-.contacts-link1:hover {
-  color: #2196F3;
+.tel {
+  color: var(--gray-color);
 }
 
-.icon-navigation {
-  margin-right: 10px;
+.technical-support {
+  background-color: var(--dark-background-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  padding: 60px 0;
+  max-height: 252px;
 }
 
-.icon-navigation:hover {
-  fill: #2196F3;
+footer p {
+  color: var(--white-color);
+}
+
+footer span {
+  color: var(--gray-color);
+}
+
+.email-footer {
+  color: var(--gray-color);
+}
+
+.address {
+  flex-direction: column;
+  display: block;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.information {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  max-width: 170px;
+}
+
+.email {
+  color: var(--gray-color);
 }
 
 .icon-staff {
@@ -380,20 +401,6 @@ button {
 
 .people-link-footer svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-svg {
-  fill: #afb1b8;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-figcaption {
-  margin-left: 24px;
-  margin-bottom: 20px;
-  text-align: justify;
 }
 
 .footer-e-mail {
