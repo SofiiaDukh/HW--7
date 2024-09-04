@@ -1,10 +1,9 @@
 .tel {
-    color: var(--gray-color);
+    color: $gray-color;
 }
 
-
 .technical-support {
-    background-color: var(--dark-background-color);
+    background-color: $dark-background-color;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -15,17 +14,20 @@
     max-height: 252px;
 }
 
-footer p {
-    color: var(--white-color);
+footer{
 
-}
+    p {
+        color: $white-color;
+    
+    }
 
-footer span {
-    color: var(--gray-color);
-}
+    span {
+        color: $gray-color;
+    }
+} 
 
 .email-footer {
-    color: var(--gray-color);
+    color: $gray-color;
 }
 
 .address {
@@ -44,7 +46,7 @@ footer span {
 }
 
 .email {
-    color: var(--gray-color);
+    color: $gray-color;
 }
 
 .icon-staff {
@@ -57,14 +59,14 @@ footer span {
     height: 80px;
     box-sizing: border-box;
     margin-left: 70px;
-}
 
-.footer-icons h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    color: #FFFFFF;
+    h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        color: $white-color;
+    }
 }
 
 .footer-people-icons {
@@ -84,26 +86,33 @@ footer span {
     border-radius: 25px;
     margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: #FFFFFF;
+    fill: $white-color;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.people-link-footer svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: $blue-color;
+    }
+
+    svg {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover{
+            fill: $white-color;
+        }
+    }
 }
 
 .footer-e-mail {
     margin-left: 95px;
-}
 
-.footer-e-mail h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 1px;
-
+    h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        color: $white-color;
+        letter-spacing: 1px;
+    }
 }
 
 .footer-form {
@@ -112,11 +121,11 @@ footer span {
 }
 
 .footer-textarea {
-    background-color: var(--dark-background-color);
+    background-color: $dark-background-color;
     border-radius: 5px;
     width: 358px;
     max-height: 50px;
-    color: #757575;
+    color: $gray-color;
     font-size: 16px;
     font-family: sans-serif;
     padding-top: 20px;
@@ -124,18 +133,18 @@ footer span {
 }
 
 .footer-button {
-    background-color: #2196F3;
+    background-color: $blue-color;
     color: white;
     width: 200px;
     height: 50px;
-    border: 1px solid var(--blue-color);
+    border: 1px solid $blue-color;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 12px;
-}
 
-.footer-button img {
-    margin-left: 10px;
+    img {
+        margin-left: 10px;
+    }
 }

@@ -1,5 +1,5 @@
 .technical-support {
-    background-color: var(--dark-background-color);
+    background-color: $dark-background-color;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -23,27 +23,31 @@
     flex-wrap: wrap;
 }
 
-footer p {
-    color: var(--white-color);
+footer {
+
+    p {
+        color: $white-color;
+    }
+
+    span {
+        color: $gray-color;
+    }
 }
 
-footer span {
-    color: var(--gray-color);
-}
 .footer-icons {
     width: 206px;
     height: 80px;
     box-sizing: border-box;
     margin-left: 70px;
-}
 
-.footer-icons h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 1px;
+    h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        color: $white-color;
+        letter-spacing: 1px;
+    }
 }
 
 .footer-people-icons {
@@ -62,34 +66,34 @@ footer span {
     margin-top: 15px;
     border-radius: 25px;
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: #FFFFFF;
+    background-color: $dark-background-color;
+    fill: $white-color;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.people-link-footer svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &:hover {
+        background-color: $blue-color;
+    }
 
-.people-link-footer:hover {
-    background-color: #2196F3;
-}
+    svg {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.people-link-footer:hover svg{
-    fill: var(--white-color);
+        &:hover{
+            fill: $white-color;
+        }
+    }
 }
 
 .footer-e-mail {
     margin-left: 95px;
-}
 
-.footer-e-mail h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 1px;
+    h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        color: $white-color;
+        letter-spacing: 1px;
+    }
 }
 
 .footer-form {
@@ -98,11 +102,11 @@ footer span {
 }
 
 .footer-textarea {
-    background-color: var(--dark-background-color);
+    background-color: $dark-background-color;
     border-radius: 5px;
     width: 358px;
     max-height: 50px;
-    color: #757575;
+    color: $gray-color;
     font-size: 16px;
     font-family: sans-serif;
     padding-top: 20px;
@@ -110,19 +114,19 @@ footer span {
 }
 
 .footer-button {
-    background-color: #2196F3;
-    color: white;
+    background-color: $blue-color;
+    color: $white-color;
     width: 200px;
     height: 50px;
-    border: 1px solid var(--blue-color);
+    border: 1px solid $blue-color;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 12px;
     cursor: pointer;
-}
 
-.footer-button img {
-    margin-left: 10px;
+    img {
+        margin-left: 10px;
+    }
 }

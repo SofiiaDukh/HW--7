@@ -1,5 +1,5 @@
 .efection-solutions {
-    background-color: var(--dark-background-color);
+    background-color: $dark-background-color;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(40, 50, 60, 0.5)), url("./img/Img\ \(13\).png");
     background-repeat: no-repeat;
     background-position: center;
@@ -7,39 +7,29 @@
     margin: 0;
     text-align: center;
     padding: 200px 0;
-}
 
-.efection-solutions h1 {
-    color: var(--white-color);
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    flex-wrap: wrap;
-    width: 696px;
-    height: 120px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.attention-to-detail ul {
-    padding: 94px 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    gap: 30px;
-
+    h1{
+        color: $white-color;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        flex-wrap: wrap;
+        width: 696px;
+        height: 120px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
 }
 
 .attention-to-detail-foto::before {
     content: "";
     display: block;
     background-image: url("../img/antenna\ 1.png");
-    background-color: var(--gray-background-color);
+    background-color: $gray-background-color;
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
@@ -50,7 +40,7 @@
     content: "";
     display: block;
     background-image: url("../img/clock\ 1.png");
-    background-color: var(--gray-background-color);
+    background-color: $gray-background-color;
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
@@ -61,7 +51,7 @@
     content: "";
     display: block;
     background-image: url("../img/diagram\ 1.png");
-    background-color: var(--gray-background-color);
+    background-color: $gray-background-color;
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
@@ -72,7 +62,7 @@
     content: "";
     display: block;
     background-image: url("../img/astronaut_1.png");
-    background-color: var(--gray-background-color);
+    background-color: $gray-background-color;
     background-repeat: no-repeat;
     background-position: center;
     width: 270px;
@@ -80,7 +70,7 @@
 }
 
 .attention-to-detail h4 {
-    color: var(--black-color);
+    color: $black-color;
     font-size: 14px;
     line-height: 1.14;
     text-align: start;
@@ -88,20 +78,29 @@
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-}
 
-.attention-to-detail p {
-    color: var(--gray-color);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: justify;
+    ul {
+        padding: 94px 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        gap: 30px;
+    }
+
+    p {
+        color: $gray-color;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: justify;
+    }
 }
 
 .work h1 {
-    color: var(--black-color);
+    color: $black-color;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -117,7 +116,6 @@
     gap: 30px;
 }
 
-
 .label {
     position: relative;
     bottom: 22.5%;
@@ -128,24 +126,42 @@
     text-align: center;
     padding-top: 27px;
     padding-bottom: 27px;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(47, 48, 58, 0.8);
+    color: $white-color;
+    background-color: $dark-background-color;
     opacity: 1;
 }
 
 .staff {
     padding: 94px 0;
-    background-color: var(--gray-background-color);
-}
+    background-color: $gray-background-color;
 
-.staff h1 {
-    color: var(--black-color);
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    h1 {
+        color: $black-color;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    h3 {
+        color: $black-color;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.18;
+    }
+
+    p {
+        line-height: 1.18;
+        font-size: 16px;
+        color: $gray-color;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 }
 
 .team-list {
@@ -160,8 +176,8 @@
     border-radius: 4px;
     margin: 0px;
     padding: 0px;
-    box-shadow: 0 5px 10px -5px var(--gray-color);
-    background-color: white;
+    box-shadow: 0 5px 10px -5px $gray-color;
+    background-color: $white-color;
 }
 
 .photo {
@@ -169,27 +185,10 @@
     height: 260px;
 }
 
-.staff h3 {
-    color: var(--black-color);
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.18;
-}
-
 .team-wrap {
     text-align: center;
 }
 
-.staff p {
-    line-height: 1.18;
-    font-size: 16px;
-    color: var(--gray-color);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 .icon-staff {
     width: 20px;
     height: 20px;
@@ -209,21 +208,21 @@
     border-radius: 25px;
     margin-right: 10px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.people-link:hover {
-    background-color: #2196F3;
-}
+    &:hover {
+        background-color: $blue-color;
+    }
 
-.people-link:hover svg {
-    fill: #ffffff;
-}
+    svg {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.people-link svg {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            fill: $white-color;
+        }
+    }
 }
 
 .icons-customer-regular h2 {
@@ -231,7 +230,7 @@
     font-weight: 700;
     font-style: normal;
     font-size: 36px;
-    color: #212121;
+    color: $black-color;
     display: flex;
     justify-content: center;
 }
@@ -239,10 +238,6 @@
 .customers-icon {
     display: flex;
     justify-content: space-between;
-}
-
-.people-link-regular:hover a {
-    fill: #2196F3;
 }
 
 .people-link-regular {
@@ -253,17 +248,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 2px solid #afb1b8;
+    outline: 2px solid $svg-fill;
     border-radius: 5px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.people-link-regular:hover svg {
-    fill: #2196F3;
-}
+    &:hover {
+        outline: 2px solid $blue-color;
+    }
 
-.people-link-regular:hover {
-    outline: 2px solid #2196F3;
+    a {
+        &:hover{
+            fill: $blue-color;
+        }
+    }
+
+    svg {
+        &:hover{
+            fill: $blue-color;
+        }
+    }
 }
 
 .icon-regular-customers {
@@ -278,14 +281,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #2121218f;
+    background-color: $black-color;
     opacity: 1;
     transition: opacity 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+    .is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .no-scroll {
@@ -299,46 +302,57 @@
     max-width: 530px;
     max-height: 580px;
     padding: 20px;
-    background-color: white;
+    background-color: $white-color;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     box-sizing: border-box;
+
+    h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        color: $gray-color;
+        margin-bottom: 5px;
+        margin-right: 350px;
+        margin-top: 15px;
+    }
 }
 
 .modal-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.modal-title h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
-    color: #212121;
-    margin-bottom: 0;
-    margin-top: 10px;
+    h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: $black-color;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
 }
 
 .btn {
     border-radius: 50px;
-    color: black;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
+    color: $only-black;
+    border: 1px solid $border-black;
 
-.btn:hover {
-    color: var(--blue-color);
-    border: 1px solid var(--blue-color);
+    &:hover {
+        color: $blue-color;
+        border: 1px solid $blue-color;
+    }
 }
 
 .btn-open {
-    color: var(--black-color);
+    color: $black-color;
     border: none;
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--blue-color);
-    color: var(--white-color);
+    background-color: $blue-color;
+    color: $white-color;
     border-radius: 10px;
     width: 200px;
     font-size: 16px;
@@ -347,21 +361,10 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
 
-.btn-open:disabled {
-    pointer-events: none;
-}
-
-.modal h4 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-    color: #757575;
-    margin-bottom: 5px;
-    margin-right: 350px;
-    margin-top: 15px;
+    &:disabled {
+        pointer-events: none;
+    }
 }
 
 .modal-defs {
@@ -380,16 +383,16 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #757575;
-}
+    color: $gray-color;
 
-.text-modal p {
-    margin-right: 5px;
-}
+    p {
+        margin-right: 5px;
+    }
 
-.text-modal a {
-    color: #2196F3;
-    text-decoration-line: underline;
+    a {
+        color: $blue-color;
+        text-decoration-line: underline;
+    }
 }
 
 input#checkbox {
@@ -404,29 +407,29 @@ input#checkbox {
     align-items: center;
     margin-top: 10px;
     width: 425px;
-}
 
-.checkbox-modal p {
-    color: #757575;
-    margin-right: 5px;
-}
+    p {
+        color: $gray-color;
+        margin-right: 5px;
+    }
 
-.checkbox-modal a {
-    color: #2196F3;
-    text-decoration-line: underline;
+    a {
+        color: $blue-color;
+        text-decoration-line: underline;
+    }
 }
 
 .form-btn {
     width: 200px;
     height: 50px;
     margin-top: 20px;
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: $blue-color;
+    color: $white-color;
     border-radius: 10px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    border: 1px solid #2196F3;
+    border: 1px solid $blue-color;
     cursor: pointer;
 }
 
@@ -434,11 +437,11 @@ input#checkbox {
     width: 360px;
     padding: 10px;
     border: none;
-}
 
-.form-input:focus {
-    outline: none;
-    border-color: #2196F3;
+    &:focus {
+        outline: none;
+        border-color: $blue-color;
+    }
 }
 
 .person-modal-name,
@@ -447,70 +450,59 @@ input#checkbox {
 .comment-modal {
     display: flex;
     align-items: center;
-    border: 1px solid #2a2a2a;
+    border: 1px solid $modal-border-black;
     border-radius: 5px;
     width: 100%;
     height: 50px;
     margin-left: 5px;
     box-sizing: border-box;
+
+    &:hover{
+        border-color: $blue-color;
+    }
 }
 
 .person-modal-name svg,
 .phone-modal-tel svg,
 .email-modal-label svg {
     margin-right: 10px;
-    fill: #757575;
+    fill: $gray-color;
+
+    &:hover{
+        fill: $blue-color;
+    }
+
+    &:focus-within{
+        border-color: $blue-color;
+        fill: $blue-color;
+    }
 }
 
-.person-modal-name:hover,
-.phone-modal-tel:hover,
-.email-modal-label:hover,
-.comment-modal:hover {
-    border-color: #2196F3;
-}
-
-.person-modal-name:hover svg,
-.phone-modal-tel:hover svg,
-.email-modal-label:hover svg {
-    fill: #2196F3;
-}
-
-.person-modal-name:focus-within,
-.phone-modal-tel:focus-within,
-.email-modal-label:focus-within,
 .form-input {
-    border-color: #2196F3;
-}
-
-
-.person-modal-name:focus-within svg,
-.phone-modal-tel:focus-within svg,
-.email-modal-label:focus-within svg {
-    fill: #2196F3
+    border-color: $blue-color; 
 }
 
 .comment-modal {
     height: 130px;
-}
 
-.comment-modal textarea {
-    border: none;
-    resize: none;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    border-radius: 5px;
-    font-weight: 400;
-    font-style: normal;
-    color: #757575;
-    height: 120px;
-    box-sizing: border-box;
-}
+    textarea {
+        border: none;
+        resize: none;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        border-radius: 5px;
+        font-weight: 400;
+        font-style: normal;
+        color: $gray-color;
+        height: 120px;
+        box-sizing: border-box;
 
-.comment-modal textarea:focus {
-    outline: none;
-}
+        &:focus {
+            outline: none;
+        }
 
-.comment-modal:focus-within,
-textarea {
-    border-color: #2196F3;
+        &:focus-within{
+            border-color: $blue-color;
+        }
+    }
 }

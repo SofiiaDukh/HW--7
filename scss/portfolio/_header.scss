@@ -1,5 +1,9 @@
 .header {
     padding: 25px 0;
+
+    svg {
+        fill: $gray-color;
+    }
 }
 
 .flex-container {
@@ -8,13 +12,41 @@
     align-items: center;
 }
 
-
 .navigation-list {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     gap: 50px;
     position: relative;
+
+    a {
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s transform ease;
+            transform: scale3d(0, 1, 1);
+            transform-origin: 0 50%;
+        }
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            background-color: $blue-color;
+            display: block;
+            border-radius: 5px;
+            bottom: -42px;
+            transform-origin: 50% 50%;
+        }
+
+        &:hover::before {
+            transform: scale3d(1, 1, 1);
+        }
+    }
 }
 
 .navigation-item {
@@ -25,42 +57,15 @@
     transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-list a::before {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    transition: 0.5s transform ease;
-    transform: scale3d(0, 1, 1);
-    transform-origin: 0 50%;
-}
-
-.navigation-list a::before {
-    content: "";
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    background-color: var(--blue-color);
-    display: block;
-    border-radius: 5px;
-    bottom: -42px;
-    transform-origin: 50% 50%;
-}
-
-.navigation-list a:hover::before {
-    transform: scale3d(1, 1, 1);
-}
-
 .navigation-link {
-    color: var(--black-color);
+    color: $black-color;
     font-size: 16px;
     position: relative;
-}
 
-.navigation-link:hover {
-    color: var(--blue-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: $blue-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .contacts {
@@ -75,32 +80,36 @@
 }
 
 .contacts-link1 {
-    color: #757575;
+    color: $gray-color;
     font-size: 16px;
-}
 
-.contacts-link1:hover svg {
-    fill: #2196F3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    svg {
+        &:hover {
+            fill: $blue-color;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
 
-.contacts-link:hover {
-    color: var(--blue-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-link:hover svg {
-    fill: #2196F3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: $blue-color;
+    }
 }
 
 .contacts-link {
-    color: #757575;
+    color: $gray-color;
     font-size: 16px;
-}
 
-.header svg {
-    fill: #757575;
+    &:hover {
+        color: $blue-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    svg {
+        :hover {
+            fill: $blue-color;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
 }
 
 .portfolio-menu {
@@ -109,7 +118,6 @@
     gap: 24px;
     margin-bottom: 72px;
 }
-
 
 .portfolio-btn {
     font-weight: 500;
@@ -121,25 +129,20 @@
     margin-bottom: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-btn:hover {
-    color: var(--white-color);
-    background-color: var(--blue-color);
-    -webkit-box-shadow: 0px 20px 40px -10px rgba(97, 97, 97, 1);
-    -moz-box-shadow: 0px 20px 40px -10px rgba(97, 97, 97, 1);
-    box-shadow: 0px 20px 40px -10px rgba(97, 97, 97, 1);
+    &:hover {
+        color: $white-color;
+        background-color: $blue-color;
+        -webkit-box-shadow: 0px 20px 40px -10px $gray-color;
+        -moz-box-shadow: 0px 20px 40px -10px $gray-color;
+        box-shadow: 0px 20px 40px -10px $gray-color;
+    }
 }
-
-.contacts-link1:hover {
-    color: #2196F3;
-}
-
 
 .icon-navigation {
     margin-right: 10px;
-}
 
-.icon-navigation:hover {
-    fill: #2196F3;
+    &:hover {
+        fill: $blue-color;
+    }
 }
