@@ -8,14 +8,12 @@
     text-align: center;
     padding: 200px 0;
 
-    h1{
+    h1 {
         color: $white-color;
-        font-size: 44px;
         line-height: 1.36;
         text-align: center;
-        font-family: "Roboto", sans-serif;
+        @include font(44px);
         font-weight: 900;
-        font-style: normal;
         flex-wrap: wrap;
         width: 696px;
         height: 120px;
@@ -25,58 +23,21 @@
     }
 }
 
-.attention-to-detail-foto::before {
-    content: "";
-    display: block;
-    background-image: url("../img/antenna\ 1.png");
-    background-color: $gray-background-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 270px;
-    height: 120px;
-}
-
-.attention-to-detail-foto1::before {
-    content: "";
-    display: block;
-    background-image: url("../img/clock\ 1.png");
-    background-color: $gray-background-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 270px;
-    height: 120px;
-}
-
-.attention-to-detail-foto2::before {
-    content: "";
-    display: block;
-    background-image: url("../img/diagram\ 1.png");
-    background-color: $gray-background-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 270px;
-    height: 120px;
-}
-
-.attention-to-detail-foto3::before {
-    content: "";
-    display: block;
-    background-image: url("../img/astronaut_1.png");
-    background-color: $gray-background-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 270px;
-    height: 120px;
+.attention-to-detail-foto,
+.attention-to-detail-foto1,
+.attention-to-detail-foto2,
+.attention-to-detail-foto3 {
+    &::before {
+        @extend %attention-foto;
+    }
 }
 
 .attention-to-detail h4 {
+    @include font(14px);
     color: $black-color;
-    font-size: 14px;
     line-height: 1.14;
     text-align: start;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-style: normal;
     text-transform: uppercase;
 
     ul {
@@ -89,11 +50,9 @@
     }
 
     p {
+        @include font(14px);
         color: $gray-color;
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
         line-height: 1.71;
         text-align: justify;
     }
@@ -101,12 +60,10 @@
 
 .work h1 {
     color: $black-color;
-    font-size: 36px;
+    @include font(36px);
     line-height: 1.16;
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-style: normal;
 }
 
 .work-list {
@@ -117,10 +74,9 @@
 }
 
 .label {
+    @include font(14px);
     position: relative;
     bottom: 22.5%;
-    font-family: Roboto;
-    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
@@ -137,30 +93,24 @@
 
     h1 {
         color: $black-color;
-        font-size: 36px;
+        @include font(36px);
         line-height: 1.16;
         text-align: center;
-        font-family: "Roboto", sans-serif;
         font-weight: 700;
-        font-style: normal;
     }
 
     h3 {
         color: $black-color;
-        font-family: "Roboto", sans-serif;
+        @include font(16px);
         font-weight: 500;
-        font-style: normal;
-        font-size: 16px;
         line-height: 1.18;
     }
 
     p {
         line-height: 1.18;
-        font-size: 16px;
+        @include font(16px);
         color: $gray-color;
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
-        font-style: normal;
     }
 }
 
@@ -207,7 +157,7 @@
     margin-top: 15px;
     border-radius: 25px;
     margin-right: 10px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transit(background-color);
 
     &:hover {
         background-color: $blue-color;
@@ -217,7 +167,7 @@
         width: 20px;
         height: 20px;
         cursor: pointer;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit(fill);
 
         &:hover {
             fill: $white-color;
@@ -226,10 +176,8 @@
 }
 
 .icons-customer-regular h2 {
-    font-family: "Roboto", sans-serif;
+    @include font(36px);
     font-weight: 700;
-    font-style: normal;
-    font-size: 36px;
     color: $black-color;
     display: flex;
     justify-content: center;
@@ -250,20 +198,20 @@
     align-items: center;
     outline: 2px solid $svg-fill;
     border-radius: 5px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transit(border-color);
 
     &:hover {
         outline: 2px solid $blue-color;
     }
 
     a {
-        &:hover{
+        &:hover {
             fill: $blue-color;
         }
     }
 
     svg {
-        &:hover{
+        &:hover {
             fill: $blue-color;
         }
     }
@@ -272,7 +220,7 @@
 .icon-regular-customers {
     width: 106px;
     height: 60px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transit(fill);
 }
 
 .backdrop {
@@ -283,7 +231,7 @@
     height: 100%;
     background-color: $black-color;
     opacity: 1;
-    transition: opacity 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    @include transit(opacity);
 
     .is-hidden {
         opacity: 0;
@@ -308,10 +256,8 @@
     box-sizing: border-box;
 
     h4 {
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
-        font-style: normal;
-        font-size: 12px;
+        @include font(12px);
         color: $gray-color;
         margin-bottom: 5px;
         margin-right: 350px;
@@ -325,10 +271,8 @@
     align-items: center;
 
     h2 {
-        font-family: "Roboto", sans-serif;
+        @include font(20px);
         font-weight: 700;
-        font-style: normal;
-        font-size: 20px;
         color: $black-color;
         margin-bottom: 0;
         margin-top: 10px;
@@ -355,12 +299,10 @@
     color: $white-color;
     border-radius: 10px;
     width: 200px;
-    font-size: 16px;
+    @include font(16px);
     line-height: 1.87;
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-style: normal;
 
     &:disabled {
         pointer-events: none;
@@ -378,11 +320,9 @@
     align-items: center;
     justify-content: flex-end;
     height: 20px;
-    font-size: 14px;
+    @include font(14px);
     line-height: 24px;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
     color: $gray-color;
 
     p {
@@ -426,9 +366,8 @@ input#checkbox {
     background-color: $blue-color;
     color: $white-color;
     border-radius: 10px;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-style: normal;
+    @include font(14px);
     border: 1px solid $blue-color;
     cursor: pointer;
 }
@@ -457,7 +396,7 @@ input#checkbox {
     margin-left: 5px;
     box-sizing: border-box;
 
-    &:hover{
+    &:hover {
         border-color: $blue-color;
     }
 }
@@ -468,18 +407,18 @@ input#checkbox {
     margin-right: 10px;
     fill: $gray-color;
 
-    &:hover{
+    &:hover {
         fill: $blue-color;
     }
 
-    &:focus-within{
+    &:focus-within {
         border-color: $blue-color;
         fill: $blue-color;
     }
 }
 
 .form-input {
-    border-color: $blue-color; 
+    border-color: $blue-color;
 }
 
 .comment-modal {
@@ -488,11 +427,9 @@ input#checkbox {
     textarea {
         border: none;
         resize: none;
-        font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        @include font(14px);
         border-radius: 5px;
         font-weight: 400;
-        font-style: normal;
         color: $gray-color;
         height: 120px;
         box-sizing: border-box;
@@ -501,8 +438,13 @@ input#checkbox {
             outline: none;
         }
 
-        &:focus-within{
+        &:focus-within {
             border-color: $blue-color;
         }
+    }
+}
+@each $attention in foto, foto1, foto2, foto2 {
+    .#{$attention}-to-detail {
+        background-image: url('../img/#{$attention}.png');
     }
 }

@@ -66,6 +66,9 @@ figcaption {
 .header {
   padding: 25px 0;
 }
+.header svg {
+  fill: #757575;
+}
 
 .flex-container {
   display: flex;
@@ -80,15 +83,6 @@ figcaption {
   gap: 50px;
   position: relative;
 }
-
-.navigation-item {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  size: 14px;
-  font-size: 16px;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .navigation-list a::before {
   position: absolute;
   width: 100%;
@@ -99,31 +93,36 @@ figcaption {
   transform: scale3d(0, 1, 1);
   transform-origin: 0 50%;
 }
-
 .navigation-list a::before {
   content: "";
   width: 100%;
   height: 4px;
   position: absolute;
-  background-color: var(--blue-color);
+  background-color: #2196F3;
   display: block;
   border-radius: 5px;
   bottom: -42px;
   transform-origin: 50% 50%;
 }
-
 .navigation-list a:hover::before {
   transform: scale3d(1, 1, 1);
 }
 
+.navigation-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  size: 14px;
+  font-size: 16px;
+  @in;
+}
+
 .navigation-link {
-  color: var(--black-color);
+  color: #212121;
   font-size: 16px;
   position: relative;
 }
-
 .navigation-link:hover {
-  color: var(--blue-color);
+  color: #2196F3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -142,29 +141,25 @@ figcaption {
   color: #757575;
   font-size: 16px;
 }
-
-.contacts-link1:hover svg {
+.contacts-link1 svg:hover {
   fill: #2196F3;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contacts-link:hover {
-  color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-link:hover svg {
-  fill: #2196F3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.contacts-link1:hover {
+  color: #2196F3;
 }
 
 .contacts-link {
   color: #757575;
   font-size: 16px;
 }
-
-.header svg {
-  fill: #757575;
+.contacts-link:hover {
+  color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-link svg :hover {
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-menu {
@@ -185,21 +180,15 @@ figcaption {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-btn:hover {
-  color: var(--white-color);
-  background-color: var(--blue-color);
-  box-shadow: 0px 20px 40px -10px rgb(97, 97, 97);
-}
-
-.contacts-link1:hover {
-  color: #2196F3;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  box-shadow: 0px 20px 40px -10px #757575;
 }
 
 .icon-navigation {
   margin-right: 10px;
 }
-
 .icon-navigation:hover {
   fill: #2196F3;
 }
@@ -223,12 +212,6 @@ figcaption {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btn:hover {
-  color: var(--white-color);
-  background-color: var(--blue-color);
-  box-shadow: 0px 20px 40px -10px rgb(97, 97, 97);
-}
-
 .card-overlay {
   position: absolute;
   left: 0;
@@ -236,8 +219,8 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: var(--white-color);
-  background-color: rgba(33, 150, 243, 0.9);
+  color: #FFFFFF;
+  background-color: #2196F3;
   padding: 30px;
   font-family: Roboto;
   font-size: 18px;
@@ -262,20 +245,6 @@ figcaption {
   font-size: 18px;
 }
 
-.figure img {
-  border-style: none;
-  width: 100%;
-}
-
-.figure:hover {
-  width: 270px;
-  margin: 0px;
-  padding: 0px;
-  box-shadow: 0 5px 10px -5px var(--gray-color);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .figure-overlay {
   overflow: hidden;
   position: relative;
@@ -287,19 +256,29 @@ figcaption {
   outline: 1px solid #EEEEEE;
   cursor: pointer;
 }
-
-.technocrat h3 {
-  font-weight: 700;
-  font-style: normal;
+.figure:hover {
+  width: 270px;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0 5px 10px -5px #757575;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.technocrat p {
-  font-weight: 400;
-  font-style: normal;
+.figure img {
+  border-style: none;
+  width: 100%;
 }
 
 .technocrat {
   margin-bottom: 94px;
+}
+.technocrat p {
+  font-weight: 400;
+  font-style: normal;
+}
+.technocrat h3 {
+  font-weight: 700;
+  font-style: normal;
 }
 
 .technocrat-list {
@@ -312,11 +291,11 @@ figcaption {
 }
 
 .tel {
-  color: var(--gray-color);
+  color: #757575;
 }
 
 .technical-support {
-  background-color: var(--dark-background-color);
+  background-color: #2F303A;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -328,15 +307,14 @@ figcaption {
 }
 
 footer p {
-  color: var(--white-color);
+  color: #FFFFFF;
 }
-
 footer span {
-  color: var(--gray-color);
+  color: #757575;
 }
 
 .email-footer {
-  color: var(--gray-color);
+  color: #757575;
 }
 
 .address {
@@ -355,7 +333,7 @@ footer span {
 }
 
 .email {
-  color: var(--gray-color);
+  color: #757575;
 }
 
 .icon-staff {
@@ -369,7 +347,6 @@ footer span {
   box-sizing: border-box;
   margin-left: 70px;
 }
-
 .footer-icons h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -398,15 +375,19 @@ footer span {
   fill: #FFFFFF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.people-link-footer:hover {
+  background-color: #2196F3;
+}
 .people-link-footer svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.people-link-footer svg:hover {
+  fill: #FFFFFF;
 }
 
 .footer-e-mail {
   margin-left: 95px;
 }
-
 .footer-e-mail h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -422,7 +403,7 @@ footer span {
 }
 
 .footer-textarea {
-  background-color: var(--dark-background-color);
+  background-color: #2F303A;
   border-radius: 5px;
   width: 358px;
   max-height: 50px;
@@ -438,14 +419,13 @@ footer span {
   color: white;
   width: 200px;
   height: 50px;
-  border: 1px solid var(--blue-color);
+  border: 1px solid #2196F3;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 12px;
 }
-
 .footer-button img {
   margin-left: 10px;
 }
