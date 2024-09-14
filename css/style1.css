@@ -63,6 +63,11 @@ figcaption {
   text-align: justify;
 }
 
+.contacts, .navigation-list {
+  display: flex;
+  gap: 50px;
+}
+
 .header {
   padding: 25px 0;
 }
@@ -78,9 +83,7 @@ figcaption {
 
 .navigation-list {
   list-style: none;
-  display: flex;
   justify-content: flex-start;
-  gap: 50px;
   position: relative;
 }
 .navigation-list a::before {
@@ -109,11 +112,12 @@ figcaption {
 }
 
 .navigation-item {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-style: normal;
   size: 14px;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  @in;
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link {
@@ -127,9 +131,7 @@ figcaption {
 }
 
 .contacts {
-  display: flex;
   list-style: none;
-  gap: 50px;
 }
 
 .contacts-item {
@@ -171,9 +173,10 @@ figcaption {
 
 .portfolio-btn {
   font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
   padding: 12px 24px;
   margin-top: 90px;
   margin-bottom: 0;
@@ -202,9 +205,10 @@ figcaption {
 
 .portfolio-btn {
   font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
   padding: 12px 24px;
   margin-top: 90px;
   margin-bottom: 0;
@@ -222,9 +226,10 @@ figcaption {
   color: #FFFFFF;
   background-color: #2196F3;
   padding: 30px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  font-style: normal;
   line-height: 28px;
   letter-spacing: 0.03em;
   height: 290px;
@@ -297,9 +302,9 @@ figcaption {
 .technical-support {
   background-color: #2F303A;
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   text-align: left;
   padding: 60px 0;
@@ -326,6 +331,8 @@ footer span {
 
 .information {
   font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: 0.01em;
@@ -349,9 +356,9 @@ footer span {
 }
 .footer-icons h3 {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
   color: #FFFFFF;
 }
 
@@ -390,9 +397,9 @@ footer span {
 }
 .footer-e-mail h3 {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 1px;
 }
@@ -408,8 +415,8 @@ footer span {
   width: 358px;
   max-height: 50px;
   color: #757575;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-family: sans-serif;
   padding-top: 20px;
   padding-left: 10px;
 }
